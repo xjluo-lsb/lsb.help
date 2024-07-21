@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enumeration TriggerFlags</title>
+    <link href="../styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="types">
+      <div class="typename">
+        <span class="enumlabel">Enumeration</span> <span class="enumtype">TriggerFlags</span>
+      </div>
+      <h2>Description</h2>
+      <p>
+        This is the enumeration type for TriggerFlags, which is used in the InputParameter to indicate what kind of changes
+        happened to the InputParameter. The supported values are,
+        <ul>
+          <li>IsNull - The input parameter value is null.</li>
+          <li>IsEmpty - The input parameter value is an empty string.</li>
+          <li>IsWhiteSpace - The input parameter value contains whitespace only, not an empty string.</li>
+          <li>IsTrue - The input parameter value is boolean value true.</li>
+          <li>IsFalse - The input parameter value is boolean value false.</li>
+          <li>IsZero - The input parameter value is 0.</li>
+          <li>IsPositive - The input parameter value is a positive value, greater than 0.</li>
+          <li>IsNegative - The input parameter value is a negative value, less than 0.</li>
+          <li>IsMatched - The input parameter value matches the specified regular expression pattern for the parameter.</li>
+          <li>IsChanged - The input parameter value is changed.</l>
+          <li>IsTrigger - The input parameter is the one triggered the check.</li>
+        </ul>
+      </p>
+      <h2>Supported controls:</h2>
+      <p>
+        This type is used internally in the Leave Script Behind code, not directly used in lsb views.
+      </p>
+    </div>
+  </body>
+</html>        
