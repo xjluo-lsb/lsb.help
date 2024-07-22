@@ -34,3 +34,23 @@ span.enumtype
 {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+span.enumvalue
+{
+    font-weight: bold;
+    color:#1A5276;
+}
+
+span.node
+{
+    font-weight: bold;
+    font-style: italic;
+    color:darkviolet;
+}
+
+span.attribute
+{
+    font-weight: bold;
+    font-style: italic;
+    color:darkgreen;
+}
