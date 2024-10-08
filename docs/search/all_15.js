@@ -11,6 +11,7 @@ var searchData=
   ['viewcaption_8',['ViewCaption',['../class_view_caption.html',1,'']]],
   ['viewelements_9',['ViewElements',['../class_view_elements.html',1,'']]],
   ['viewlauncher_10',['ViewLauncher',['../class_view_launcher.html',1,'']]],
-  ['visible_11',['visible',['../class_column.html#af46eb112dd47f8e0b994be3499da69ad',1,'Column::visible'],['../class_list_view_filter.html#a13e2fc63c5135bc3fb14f5d901b1527e',1,'ListViewFilter::visible'],['../class_list_view_status.html#ab26df3cb818f0a0e3ab65467fc2af5c8',1,'ListViewStatus::visible'],['../class_prompt.html#a3d991c9f945f50a513b5fd8afe16b53b',1,'Prompt::visible'],['../class_view_caption.html#a3c42842694eaef212711fee1feea1a04',1,'ViewCaption::visible']]],
-  ['visualizing_12',['Visualizing',['../group__section__enum.html#gga3a499a6fe47e9271355afa8b2739fe6baacccc8a6362860222376512cd6a4db34',1,'LsbViewSchema.dox']]]
+  ['views_20come_20with_20lsb_11',['The views come with LSB',['../group__section__views.html',1,'']]],
+  ['visible_12',['visible',['../class_column.html#af46eb112dd47f8e0b994be3499da69ad',1,'Column::visible'],['../class_list_view_filter.html#a13e2fc63c5135bc3fb14f5d901b1527e',1,'ListViewFilter::visible'],['../class_list_view_status.html#ab26df3cb818f0a0e3ab65467fc2af5c8',1,'ListViewStatus::visible'],['../class_prompt.html#a3d991c9f945f50a513b5fd8afe16b53b',1,'Prompt::visible'],['../class_view_caption.html#a3c42842694eaef212711fee1feea1a04',1,'ViewCaption::visible']]],
+  ['visualizing_13',['Visualizing',['../group__section__enum.html#gga3a499a6fe47e9271355afa8b2739fe6baacccc8a6362860222376512cd6a4db34',1,'LsbViewSchema.dox']]]
 ];
