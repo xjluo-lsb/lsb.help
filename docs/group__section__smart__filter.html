@@ -88,7 +88,7 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 <p>The <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the very common list view control to display data in r...">ListView</a> control supports rich client filtering functionality through the embedded filter input on the top. It can be turned on/off through the <b>visible</b> attribute in the <b>filter</b> node (see <a class="el" href="class_list_view_filter.html" title="This node defines the filter setting for ListView.">ListViewFilter</a>) in the <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the very common list view control to display data in r...">ListView</a> definition. Here we discuss that when the filter feature is turned on in the <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the very common list view control to display data in r...">ListView</a>, how we can use it to quickly find items in the <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the very common list view control to display data in r...">ListView</a>.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md29"></a>
 Column Based Filter</h2>
 <p>A filter is typically specified as <code>column_name:filter_value</code>. Both the column name and the filter value could have double quotes to wrap them. The double quotes are required only if there are one or more spaces contained in the column name or filter value. If column name is not specified in a filter, then this filter pattern will be tested against all columns in all items.</p>
 <p>Here are some examples of column based filter, </p><ul>
@@ -96,21 +96,21 @@ Column Based Filter</h2>
 <li><code>"AB C":"\d+A\d+"</code> is also a valid column based filter. Here the <code>AB C</code> is the column name and <code>\d+A\d+</code> is the filter value. The double quotes in the column name are necessary as there is a space inside the column name. Meanwhile the double quotes in the column pattern are optional. </li>
 <li><code>A B C:invalid</code> is an invalid column based filter. The reason is that the value cannot be parsed as <code>column_name:filter_value</code>. In this case, the whole string will be used for simple string match test and all columns will be tested. See next section for why.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md30"></a>
 Filter Value</h2>
 <p>The filter support first tries to parse the filter value that user types in as a regular expression pattern and then uses the created regular expression pattern to match the values in corresponding column(s). If the specified filter value cannot be parsed as a regular expression, then the whole filter value will be used to do simple string match test. For example, </p><ul>
 <li>The value <code>A\d+B\d*</code> is a valid regular expression pattern, if the corresponding column contains values like A1B, A22B1, then the item is recognized as matched item. </li>
 <li>The value <code>*\ABCD</code> cannot be parsed as regular expression, thus the string value is used to do simple match. Only if the corresponding column value contains <code>*\ABCD</code>, then the item will be considered as matched item.</li>
 </ul>
 <p>As explained above, the filter value could have a pair of double quotes to wrap it if the value contains space(s). The double quotes used to wrap the filter value won't be used as part of the pattern or string match. If there is no space in the filter value, then the double quote is unnecessary. If there is space in the filter value and we don't use quotes to wrap the value, it will be recognized as multiple filters. The only case that we may skip double quotes with space(s) in the input is that we want to use the whole input to do simple string match test. See the invalid column based filter case above.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md31"></a>
 Combination of Filters through Operators</h2>
 <p>We can put multiple column based filters together to create for complicated filters. For example, with <code>A:1 AND B:2 AND C:3</code> we setup a new filter that requires column A to contain 1 and column B to contain 2 and column C to contain 3. Only if all three conditions are all met, an item in the <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the very common list view control to display data in r...">ListView</a> is considered as matched item. The operators supported to connect the filters are, </p><ul>
 <li><b>AND</b>, upper case only. It means both two filters need to be matched to declare an item matches the combined filter. </li>
 <li><b>OR</b>, upper case only. It means that as long as one of the two connected filters is matched, then the item is declared as matched. </li>
 <li><b>NOT</b>, upper case only. This is the not operator. When this operator is present, it means the filter next to it must be unmatched to make the combined filter matched. For example, <code>! A:1</code> means that only if the value in column A does not contain 1, then the item is recognized as matched item.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 Grouping of Filters</h2>
 <p>When the column based filters are connected through operators, it could become difficult to read the meaning of a filter. For example, what does this filter mean?</p>
 <p><code>A:1 AND B:2 OR A:3</code></p>

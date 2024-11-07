@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Leave Script Behind Document: The LSB views and view repositories</title>
+<title>Leave Script Behind Document: Section_wrapper_script</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,16 +84,10 @@ $(function(){ initResizable(false); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">The LSB views and view repositories</div></div>
+  <div class="headertitle"><div class="title">Section_wrapper_script</div></div>
 </div><!--header-->
 <div class="contents">
-<h2><a class="anchor" id="autotoc_md21"></a>
-Default View Repository</h2>
-<p>The LSB applciation comes with a default view repository that is available at <a href="https://github.com/xjluo-lsb/lsb.views">https://github.com/xjluo-lsb/lsb.views</a>. When the LSB is launched, if the default view repository is not available, LSB will automatically clone the repository and make the views available to user. The view repository will be named as DefaultViews. This view repository is automatically configured and available in the view repository configuration dialog.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
-User Defined Repositories</h2>
-<p>Users may also define their own repositories to be used in the LSB. As described in the <b>View Repository Editor</b>, user may configure a local only repositor by pointing the local view root to a local folder but not providing a GIT repository URL. In this case, all the views are available locally and not shared with others.</p>
-<p>In the other case, user may also configure a remote view repository by providing both the GIT repository URL and local view root folder. In this case, the content in the GIT repository will be automatically synced to the local folder every time the LSB applciation is launched. In this way, user may easily reuse the LSB views created by others or share the views s/he created with others. </p>
+<p>The LSB application uses Lua as internal support script to implement many funtionalities, such as </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

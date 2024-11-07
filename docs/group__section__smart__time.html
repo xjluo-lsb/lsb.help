@@ -87,9 +87,9 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">The Smart Time Input</div></div>
 </div><!--header-->
 <div class="contents">
-<h2><a class="anchor" id="autotoc_md0"></a>
+<h2><a class="anchor" id="autotoc_md23"></a>
 Date time</h2>
-<h3><a class="anchor" id="autotoc_md1"></a>
+<h3><a class="anchor" id="autotoc_md24"></a>
 Standard ISO format</h3>
 <p>The LSB supports the input of the standard ISO date time in the format of one of followings,</p><ul>
 <li><b>yyyy-MM-ddThh:mm:ss.nnn+zone</b></li>
@@ -110,7 +110,7 @@ Standard ISO format</h3>
 <li><b>(utc)</b> or <b>(UTC)</b> - It means the date time is an UTC time</li>
 <li>The characters not mentioned above are mandatory delimeters for the date time value, such as <b>-</b>, <b>T</b>, etc.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md2"></a>
+<h3><a class="anchor" id="autotoc_md25"></a>
 Smart format</h3>
 <p>The date time input in LSB also supports a flexible and smart format, such as,</p><ul>
 <li><b>now</b> - It's for the current time</li>
@@ -131,9 +131,9 @@ Smart format</h3>
 </ul>
 <p>As mentioned earlier, at the end of of the time string, <b>ago</b> is appended for time in the past and <b>later</b> should be specified for time in future. And obviously, these two suffixes cannot be used together.</p>
 <p>Please be reminded that <b>year</b> and <b>month</b> cannot be used together with each other or used with any of the previously explained <b>week</b>, <b>day</b>, <b>hour</b>, <b>minute</b> or <b>second</b>. It is very rare that there is need to specify a time with such large and small time units together. Even if there is the need to specify time with large gap and fine resolution, the time could be specified through <b>week</b> or <b>day</b>.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md26"></a>
 Time span</h2>
-<h3><a class="anchor" id="autotoc_md4"></a>
+<h3><a class="anchor" id="autotoc_md27"></a>
 Standard format</h3>
 <p>Similiar to the date time, LSB supports standard time span in format of <b>d.hh:mm:ss.nnn</b>, where each of the fields means,</p><ul>
 <li><b>d</b> - The days for the time span (integer part only). It could contain any digits as needed depends on how big the time span is. And it could also be zero or omitted (together with the dot follows it) if the time span is less than one day.</li>
@@ -142,7 +142,7 @@ Standard format</h3>
 <li><b>ss</b> - The seconds part of the time span. It's mandatory and must be presented as <b>00</b> if the second part in the time span is 0.</li>
 <li><b>nnn</b> - The milliseconds part of the time span. It's optional. When it's present in the time span value, it must contain 3 digits. For milliseonds less than 100, they should be left padded by zero. When the milliseconds part is not present in the time span value, it means that the millisecond part is 0.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md5"></a>
+<h3><a class="anchor" id="autotoc_md28"></a>
 Smart format</h3>
 <p>The time span also supports the smart format in the same way as smart time, except the suffix of <b>ago</b> and <b>later</b>, they are not needed for time span values. Here are some example values,</p><ul>
 <li>1 week 2 days and 3 hours</li>

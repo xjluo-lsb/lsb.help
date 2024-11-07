@@ -87,6 +87,122 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">The LSB settings</div></div>
 </div><!--header-->
 <div class="contents">
+<p>LSB has a dedicated settings dialog to configure the various settings for the application. All the settings are categorized in 4 groups. Check the following sections to learn what they are and how they changes the the LSB application behaves.</p>
+<h2><a class="anchor" id="autotoc_md15"></a>
+General</h2>
+<p>This is the general setting category for LSB. The settings included in this category are,</p>
+<div class="image">
+<img src="lsb-settings-general.png" alt=""/>
+</div>
+<ul>
+<li>
+<b>Aggregation time window for multiple input parameter changes</b> - This defines length of a time window in unit of milliseconds. For a LSB view control, it could have multiple input parameters, and there might multiple parameters have the values chaged at the same time (or in a very short time range). If this time window length is set to 0, that means every parameter value change will trigger data load and content refresh in the view control. This is not expected behavior in most cases. By setting this time window to a short length, then all the parameter value changes happened within this window will be recognized as one action and trigger one data load and content refresh only. Please be reminded that this time window is a moving window. Assuming this time window is set to D, and the first input parameter value gets changed at T0, and then a second parameter gets changed at T1, where T1 - T0 &lt;= D, these two input parameter changes will be recognized as one action, and the actual data load/content refresh will be triggered at time T1 + D. In general, if there are n parameters have their values changed around same time (with time gap between each adjecent two parameters less than D), then the actual data load/content refresh will happen at Tn + D. </li>
+<li>
+<b>Default view size</b> - This defines the default window size for LSB view. When a LSB view is open, it will be set to this size by default. </li>
+<li>
+<b>Show the GIT client window during execution for enlistment or refresh</b> - The LSB application uses GIT to synchronize the default view repository and the help document repository. It calls the git command to get the files synced. This setting controls if the console window is shown during the synchronization. </li>
+</ul>
+<h2><a class="anchor" id="autotoc_md16"></a>
+Color &amp; Fonts</h2>
+<p>This category contains the configurations for LSB UI, including colors and fonts, etc.</p>
+<div class="image">
+<img src="lsb-settings-ui.png" alt=""/>
+</div>
+<ul>
+<li>
+<b>Active view caption</b> - This configures the color and font for the active view controls. User may click on the foreground color, background color to chage the colors, and click on the "Choose..." button to select the font to be used for the active view control. The Preview control will show the final effect for any changes made on these configurations. </li>
+<li>
+<b>Inactive view caption</b> - This configures the color and font for the inactive view controls. It can be changed and previewed in the same way as the active view caption does. </li>
+<li>
+<b>Shell window content</b> - This is the setting for the shell window content. When a shell window is needed, such as the GIT console window mentioned above for the view synchronization, it will be displayed with the colors and font configured here. The settings can be changed and previewed in the same way as the active view caption and inactive view caption. </li>
+</ul>
+<h2><a class="anchor" id="autotoc_md17"></a>
+Shells</h2>
+<p>This is the category for configuring the shells to be used in LSB views. The page is composed of a shell list and a set of tool buttons that manages the shell list.</p>
+<div class="image">
+<img src="lsb-settings-shells.png" alt=""/>
+</div>
+<p>Here are what the tool buttons do, </p><ul>
+<li>
+<b>Scan</b> - This scans all known shells supported by LSB on current Operating System. The found shells will be added into the shell list automatically with default settings. </li>
+<li>
+<b>Edit</b> - This button is enabled only if an item in the shell list is selected. Clicking on the button will trigger the shell setting editor dialog to change the settings for the selected shell. See section below for the details of shell setting editor dialog. </li>
+<li>
+<b>Add</b> - This adds a new shell into the shell list. It also launches the shell setting editor dialog for configuring the settings for the new shell. </li>
+<li>
+<b>Delete</b> - This deletes the currently selected shell from the shell list. It's enabled only if a shell item is selected in the shell list. </li>
+<li>
+<b>Clear</b> - This removes all shells from the shell list. </li>
+</ul>
+<p><b>Note</b>: Double click on an item in the shell list has the same effect as clicking the <b>Edit</b> button.</p>
+<h3><a class="anchor" id="autotoc_md18"></a>
+Shell Settings Editor</h3>
+<p>When user requests to add a new shell or edit an existing shell, following editor dialog will be launched for user to edit the settings,</p>
+<div class="image">
+<img src="lsb-shell-editor.png" alt=""/>
+</div>
+<p>Here are the settings user can set for a shell, </p><ul>
+<li>
+<b>Name</b> - Name of the shell </li>
+<li>
+<b>Path</b> - The path to the shell executable </li>
+<li>
+<b>Reference / Module list</b> - This is a list of modules to be referenced in the shell. The modules listed here will be automatically loaded when the shell is launched. </li>
+<li>
+<b>Placeholders</b> - These placeholders will be used to embed certain values into the wrapper script that helps to execute the user specified script through the shell process. <ul>
+<li>
+<b>Customized user script</b> - This is the placeholder for the user script to be executed. </li>
+<li>
+<b>Intermediate data file</b> - This is the placeholder for the full path of the intermediate data file. The LSB view control will try to load the generated data from this intermediate data file if it is used in the wrapper script. </li>
+<li>
+<b>First half of signature</b> - To detect the wrapper script execution is completed, the LSB uses two parts of signature, combine them together and output the complete signature at the end of script execution. When LSB finds the full signature in the shell console output, it knows that the script execution completes. This placeholder is for the first half of the signature data. The signature is broken into two parts so the assignment of the data won't mistakenly trigger the recognization of execution complete. </li>
+<li>
+<b>Second half of signature</b> - This is the placeholder for the second half of signature data. </li>
+<li>
+<b>Path to view file</b> - This is the placeholder for the full path to the currently open view file. </li>
+</ul>
+</li>
+<li>
+<b>User script wrapper</b> - This is the script that wraps the actual user script to be executed in the shell. In the wrapper script, it can help to output data into the intermediate data file in specific format, it can help to generate the signature data and output to shell console to enable the determination of script completion, or any other helper function needed for the user script execution. </li>
+<li>
+<b>Script execution timeout</b> - This is the default timeout setting for the user script execution. Each user script could have its own customized timeout set through the script data source configuration, see <a class="el" href="class_script_data.html" title="This is the node that defines the configuration for generatign data through script execution.">ScriptData</a>. </li>
+</ul>
+<h2><a class="anchor" id="autotoc_md19"></a>
+Views</h2>
+<p>This is the category for configuring the view repositories to be used in LSB. Similiar to the Shells, this page is composed of a view repository list and a set of tool buttons that manages the view repository list.</p>
+<div class="image">
+<img src="lsb-settings-views.png" alt=""/>
+</div>
+<p>Here are what the tool buttons do, </p><ul>
+<li>
+<b>Edit</b> - This button is enabled only if a view repository is selected in the list. Clicking on the button will open the view repository editor dialog to change the settings for the LSB view repository. See section below for the details of view repository setting editor dialog. </li>
+<li>
+<b>Synchronize</b> - If the currently selected view repository is a GIT repository and the remote GIT repository is provided, this button is enabled. Clicking on the button will trigger the synchronization of the view files (from the remote GIT repository to local copy). </li>
+<li>
+<b>Add</b> - This adds a new view repository into the repository list. It also launches the view repository setting dialog for configuring the settings for the view repository. </li>
+<li>
+<b>Delete</b> - This deletes the currently selected view repository from the repository list. The button is enabled only if a view repository item is selected in the view repository list.  </li>
+<li>
+<b>Clear</b> - This removed all view repositories from the repository list. </li>
+</ul>
+<h3><a class="anchor" id="autotoc_md20"></a>
+View Repository Editor</h3>
+<p>When user requests to add a new LSB view repository or edit an existing view repository, following editor dialog is open for editing the settings.</p>
+<div class="image">
+<img src="lsb-view-repository-editor.png" alt=""/>
+</div>
+<p>Settings can be changed in this dialog for a view repository, </p><ul>
+<li>
+<b>Name</b> - Name of the LSB view repository </li>
+<li>
+<b>Local view root</b> - This is the local path to the root folder of the view repository. </li>
+<li>
+<b>GIT repository URL</b> - If a view repository is synchronized from a remote GIT repository, this is the GIT repository URL. If it's empty, then it means this view repository is a local repository, no synchronization is needed for it. </li>
+<li>
+<b>Refresh interval</b> - This is only valid if the view repository is synchronized from a remote GIT repository. And it controls how frequently that the LSB should do synchronization with the remote GIT repository. Please be reminded that this automatic synchronization only happens when LSB is launched. The other thing to mention is that the manual synchronization by clicking on the Synchronize button in the Views configuration page does not honor this interval setting, it does synchronization immediately when the button is clicked. </li>
+<li>
+<b>The repository is enabled to use the views hosted in it</b> - This is a switch that controls if the LSB views in this view repository will be visible in the open view dialog. </li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

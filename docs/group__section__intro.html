@@ -87,11 +87,22 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Introduction</div></div>
 </div><!--header-->
 <div class="contents">
-<p>Leave Script Behind is a cross platform tool designed with the main goal to chain a series of shell commands to complete a sepecific task, ease the user's life by reusing the LSB views without remembering all the shell commands and their parameters. As you know, some of the shell commands are very complicated and it's really a pain for someone who are new to the commands or not using them frequently to remember all the details. Besides, it provides rich capabilities on,</p><ul>
-<li>Data connectivity through SQL databases, Web APIs, etc.</li>
-<li>Support Lua language embedded in views to generate data and execute tasks.</li>
-<li>Offer rich data visualizaion through list view, tree view, chart view or web view with JavaScript support.</li>
-<li>Provides easy input controls for users to input values, from integer, string, to files. </li>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Welcome to Leave Script Behind (LSB)!</h1>
+<p>Shells are commonly used in all Operating Systems, such as <b>PowerShell</b> on <b>Windows</b>, <b>bash</b> / <b>dash</b> / <b>fish</b> on <b>Linux</b>, and <b>bash</b> / <b>zsh</b> / <b>tcsh</b> on <b>Mac OS X</b>, etc. All these shells provide powerful capabilities to allow user to find and run commands / programs on the system, and allow users to write scripts to chain as many commands as needed to work together to complete complicated tasks. Along with the flexibility and great power come with the shells, there is also a steep learning curve for new users to master all the knowledge needed to achieve what they want to do, from learning all the different commands provided by the shell(s), to mastering the usage of each command, including combinations of supported parameters, as well as how to write script in the shell supported syntax. Besides, both the shell input and output are typically presented in plain text in the shell console, which implies that users have to read restricted output in plain text to understand the data, and there is no way to interact with the data after it's outputted to the shell, unless users re-run the command(s) and store the result into variable in the shell supported way(s).</p>
+<p>Leave Script Behind (a.k.a LSB) is a cross platform tool designed with the goal to reduce the pain - it chains a sequence of shell commands to complete a specific task and provides a way to reuse the views for the same tasks. It can display the data output of command(s) at each step, user then interacts with the data to make it the input for the next step (this could also be done automatically through shell script, depends how the view is designed), and so on, step by step, till the workflow reaches the end. This can greatly ease the user's life by reusing the LSB views without remembering all the shell commands and their parameters. Each LSB view provides similiar funtionality as a script file does. Besides, it provides extra rich capabilities on,</p><ul>
+<li>Offers data visualizaion through list view, tree view, chart view and many other data view controls provided by LSB.</li>
+<li>User may interact with the intermediate data to continue the workflow with different logic and actions.</li>
+<li>The LSB provides many input controls for users to input values, from integer, string, to files, etc.</li>
+<li>It also provides capability to layout the input controls and data view controls through simple XML configuration.</li>
+<li>The LSB has embedded support on data connectivity through SQL databases, Web APIs, etc. with simple configuration.</li>
+<li>Supports Lua language embedded in views to generate data and execute tasks.</li>
+<li>Mixes multiple script snippets in the same or different languages to complete a task.</li>
+</ul>
+<p>The LSB is designed to address the users' pain points,</p><ul>
+<li>It helps users to reduce effort needed on learning many different script languages and commands.</li>
+<li>It enhances the experience that how the users can interact with the data generated/collected by the commands in the views.</li>
+<li>It shares view files created by other users and let users benefit from reusing these created views. </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

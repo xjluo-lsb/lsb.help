@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Leave Script Behind Document: The LSB views and view repositories</title>
+<title>Leave Script Behind Document: How to Test/Debug a LSB View</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,16 +84,24 @@ $(function(){ initResizable(false); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">The LSB views and view repositories</div></div>
+  <div class="headertitle"><div class="title">How to Test/Debug a LSB View</div></div>
 </div><!--header-->
 <div class="contents">
-<h2><a class="anchor" id="autotoc_md21"></a>
-Default View Repository</h2>
-<p>The LSB applciation comes with a default view repository that is available at <a href="https://github.com/xjluo-lsb/lsb.views">https://github.com/xjluo-lsb/lsb.views</a>. When the LSB is launched, if the default view repository is not available, LSB will automatically clone the repository and make the views available to user. The view repository will be named as DefaultViews. This view repository is automatically configured and available in the view repository configuration dialog.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
-User Defined Repositories</h2>
-<p>Users may also define their own repositories to be used in the LSB. As described in the <b>View Repository Editor</b>, user may configure a local only repositor by pointing the local view root to a local folder but not providing a GIT repository URL. In this case, all the views are available locally and not shared with others.</p>
-<p>In the other case, user may also configure a remote view repository by providing both the GIT repository URL and local view root folder. In this case, the content in the GIT repository will be automatically synced to the local folder every time the LSB applciation is launched. In this way, user may easily reuse the LSB views created by others or share the views s/he created with others. </p>
+<p>When you are creating a new LSB view, you definitely want to test it before you release it to other users. Here are the steps on how you can test a LSB view locally through the LSB application.</p>
+<ol>
+<li>
+Create a folder for the view to be created/tested. </li>
+<li>
+Create or put the view to be tested in the folder. </li>
+<li>
+Launch LSB and open the settings dialog, create a new view repository points to this folder. </li>
+<li>
+Open the view to be tested in LSB, now you can see the view content. </li>
+<li>
+In the logs tab in the view window, you can find how the parameters are populated and how parameters are passed between different view controls in the LSB view. </li>
+<li>
+In the Lua tab in the view window, you can find all the Lua scripts executed within the view to implement the functionalities, such as parameter check, data generation, etc. </li>
+</ol>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

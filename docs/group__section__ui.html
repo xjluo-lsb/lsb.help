@@ -87,11 +87,147 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">The LSB UI</div></div>
 </div><!--header-->
 <div class="contents">
-<p>The LSB is a multiple window MDI(Multiple DOcument Interface) application. It starts with the main window, and then when user opens a new view, it's contained in its own separate window. If user opens the same view file multiple times, they will be presented in multiple windows, one window for each view instance.</p>
-<p>Here's how the main window looks like, </p><div class="image">
+<p>The LSB is a multiple window MDI (Multiple Document Interface) application. It starts with the main window, and then when user opens a new view file, the new view is contained in its own separate window. If user opens the same view file again, a new window will be created for the view file. Despite the view file is same or not, there is always one window for each view instance.</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Main window</h2>
+<p>Here's how the main window looks like,</p>
+<div class="image">
 <img src="lsb-main-window.png" alt=""/>
 </div>
- </div><!-- contents -->
+<h3><a class="anchor" id="autotoc_md2"></a>
+Menu</h3>
+<h4><a class="anchor" id="autotoc_md3"></a>
+The <b>File</b> menu</h4>
+<div class="image">
+<img src="lsb-file-menu.png" alt=""/>
+</div>
+<ul>
+<li>
+<b>Open view ...</b> - This menu item launches the open view dialog for user to select a view file and open as LSB view. </li>
+<li>
+<b>Open recent view</b> - Select a previously opened view file from the sub-menu and open as LSB view. </li>
+<li>
+<b>Close all views</b> - This will close all the currently opened views. </li>
+<li>
+<b>Manage view history ...</b> - This menu item launches the view file history management window to configure how the view files are ordered in the opened view history. </li>
+<li>
+<b>Exit</b> - This exits and closes the LSB application. </li>
+</ul>
+<h4><a class="anchor" id="autotoc_md4"></a>
+The <b>Windows</b> menu</h4>
+<div class="image">
+<img src="lsb-windows-menu.png" alt=""/>
+</div>
+<ul>
+<li>
+<b>Views</b> - This sub-menu contains entries for all currently opened LSB views. Selecting an entry in the sub-menu will bring the corresponding LSB view into front/make it active view. </li>
+<li>
+<b>Global log window</b> - This menu item brings the global logging window into front. It logs the view open/close and all application level events. </li>
+</ul>
+<h4><a class="anchor" id="autotoc_md5"></a>
+The <b>Option</b> menu</h4>
+<div class="image">
+<img src="lsb-option-menu.png" alt=""/>
+</div>
+<ul>
+<li>
+<b>Settings ...</b> - This is the only menu item in this menu. It launches the LSB application settings dialog for user to change configurations for the LSB application. </li>
+</ul>
+<h4><a class="anchor" id="autotoc_md6"></a>
+The <b>Help</b> menu</h4>
+<div class="image">
+<img src="lsb-help-menu.png" alt=""/>
+</div>
+<ul>
+<li>
+<b>Help ...</b> - This shows the help content for the LSB application, including the content you are reading now. </li>
+<li>
+<b>About ...</b> - This shows the about information for the LSB application. </li>
+</ul>
+<h3><a class="anchor" id="autotoc_md7"></a>
+Toolbar Buttons</h3>
+<p>In the main window, there is also a toolbar that contains a set of buttons for the functionalities. The funtionalities provided by these buttons are already available through the menu items in the main menu.</p>
+<ul>
+<li>
+<b>Open view</b> - This button has the same functionality as the "Open view ..." menu item under <b>File</b> menu. Clicking the button will launch the open view dialog to select and open LSB view. Besides, the little triangle next to it triggers a drop down menu that shows the same view history as the <b>Open recent view</b> does. </li>
+<li>
+<b>Close all views</b> - This button is same as the <b>Close all views</b> menu item under <b>File</b> menu, it closes all currently opened LSB views. </li>
+<li>
+<b>Manage history</b> - This is another entry to the view file history management window. </li>
+<li>
+<b>View</b> - This button will launch a Select viiew dialog for user to select a view from a view list which contains all currently opened LSB views and make it the active view. There is also a button with little triangle next to it which triggers drop down menu that contains menu items mapped to all currently opened views. Select a menu item here will bring the corresponding LSB view into front. </li>
+<li>
+<b>Log window</b> - This button brings the global logging window into front. </li>
+<li>
+<b>Settings</b> - This button launches the settings dialog for the LSB application. </li>
+<li>
+<b>Help page</b> - This button shows the help window for the LSB application. </li>
+<li>
+<p class="startli"><b>About LSB</b> - This button shows the about window for the LSB application.</p>
+<p class="endli"></p>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md8"></a>
+View window</h2>
+<p>Here's a typical view window, it consists of 4 tabs, <b>View</b>, <b>Logs</b>, <b>Lua</b> and <b><a class="el" href="class_about.html" title="This is the node for defining content of about information in a LSB view.">About</a></b>.</p>
+<h3><a class="anchor" id="autotoc_md9"></a>
+View</h3>
+<p>The <b>View</b> tab shows the content for the LSB view.</p>
+<div class="image">
+<img src="lsb-view-view.png" alt=""/>
+</div>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Logs</h3>
+<p>The <b>Logs</b> tab contains the local logging - all the events happened within the LSB view instance, including both parameter checking and parameter changes, etc.</p>
+<div class="image">
+<img src="lsb-view-logs.png" alt=""/>
+</div>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Lua</h3>
+<p>The <b>Lua</b> tab contains the Lua code snippets executed within the LSB view instance.</p>
+<div class="image">
+<img src="lsb-view-lua.png" alt=""/>
+</div>
+<h3><a class="anchor" id="autotoc_md12"></a>
+About</h3>
+<p>The <b>About</b> tab contains the about information for the LSB view.</p>
+<div class="image">
+<img src="lsb-view-about.png" alt=""/>
+</div>
+<h2><a class="anchor" id="autotoc_md13"></a>
+Open view dialog</h2>
+<p>The open view dialog is used to find, select and open a LSB view file in the LSB application. It consists of a view list and view preview pane. When a LSB view is selected in the view list, the corresponding information of the view will be displayed in the preview pane.</p>
+<div class="image">
+<img src="lsb-open-view.png" alt=""/>
+</div>
+<p>The view list also supports smart filter, see <a class="el" href="group__section__smart__filter.html">The Smart Filtering in ListView</a>. This enables user to quickly locate the view through combination of column based filters. When a view is selected, user may also click on the <b>Open the view folder</b> button to open the target view folder using the OS native file management application, such as the <b>File Explorer</b> on Windows, <b>Safari</b> on Mac OS X, etc.</p>
+<h2><a class="anchor" id="autotoc_md14"></a>
+Manage opened view history</h2>
+<p>This is the dialog that manages how the view history is displayed.</p>
+<div class="image">
+<img src="lsb-manage-history.png" alt=""/>
+</div>
+<ul>
+<li>
+<b>History count settings</b> <ul>
+<li>
+<b>Maximum item count in menu</b> - This configures how many items will be displayed in the view history menu. </li>
+<li>
+<b>Maximum item count in history file</b> - This configures how many items will have the history data stored in the history data file. </li>
+</ul>
+</li>
+<li>
+<b>How are the view files ordered</b> <ul>
+<li>
+<b>Most recently used time</b> - The view files are ordered by most recently used time </li>
+<li>
+<b>How many times view used</b> - The view files are ordered by how many times the view is used </li>
+</ul>
+</li>
+<li>
+<b>View file history</b> - This is a list of view files opened before. They are ordered based on setting configured above. </li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
