@@ -87,7 +87,9 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">How to Create a LSB View</div></div>
 </div><!--header-->
 <div class="contents">
-<p>The recommended editor for composing LSB view file, in XML format, is the <a href="https://visualstudio.microsoft.com/">Visual Studio</a>. With the provided schema definition for the view files, the Visual Studio can provide rich hints on the potential nodes, attribute names, even values. This is the only editor that I'm aware of that comes with this feature, other editors (including Visual Studio Code) do support syntax highlighting, but no hints at equivalent level.</p>
+<h2><a class="anchor" id="autotoc_md23"></a>
+Write a LSB view</h2>
+<p>The recommended editor for composing LSB view file, in XML format, is the Microsoft <a href="https://visualstudio.microsoft.com/">Visual Studio</a>. With the provided schema definition for the LSB view files, the Visual Studio can provide rich hints on the potential nodes, attribute names, even values when user types in new text. This is the only editor that I'm aware of that comes with this feature, other editors (including Visual Studio Code) support syntax highlighting, but no hints at equivalent level.</p>
 <p>The <a href="https://github.com/xjluo-lsb/lsb.views/blob/main/LsbViewSchema.xsd">LsbViewSchema.xsd</a> comes in the views folder is the schema definition for the LSB view files. This schema file has all data types and data structures for view controls and values defined. In Visual Studio, it reads all these schema information and provides hinting in the editor. If your editor does not support schema based hinting, please read the type documents along with this page, you will get all the necessary information needed to create a LSB view file.</p>
 <p>The LSB view files all contain same structure descibed as below, the detailed schema introduction can be found at <a class="el" href="class_lsb_view.html" title="LsbView is the unit that is supported in LSB to implement different functionalities to meet different...">LsbView</a>. Please refer to the sample views come in the DefaultViews view repository to understand the file format better.</p>
 <p>The file comes with root node named LsbView, which has attributes named name, author, createTime and lastChangeTime. The node contains following child nodes, you may or may not need all of them to be presented in a LSB view file. The order of these nodes is not significant.</p><ul>
@@ -128,7 +130,10 @@ $(function(){ initResizable(false); });
 <div class="line">    &lt;/<span class="keywordtype">textView</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">view</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">LsbView</span>&gt;</div>
-</div><!-- fragment --><p>You may save this code snipper into a XML file and the follow the instructions in the next section to test and debug the view. </p>
+</div><!-- fragment --><p>You may save this code snipper into a XML file and the follow the instructions in the next section to test and debug the view.</p>
+<h2><a class="anchor" id="autotoc_md24"></a>
+Parameter mapping</h2>
+<p>As mentioned above, the <b>dataFlow</b> node is used to define the parameter mappings inside a view, typically connects an output parameter from a view control to an input parameter in another view control. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

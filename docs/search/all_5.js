@@ -12,12 +12,12 @@ var searchData=
   ['filetypes_9',['fileTypes',['../class_property_field.html#a5e2c0056c679f806fbcb8aa2a30777c7',1,'PropertyField']]],
   ['fill_10',['Fill',['../group__section__enum.html#gga674b457ee78cd3b1f5b0aeff81c749a3adb3e3f51c9107e26c9bccf9a188ce2ed',1,'LsbViewSchema.dox']]],
   ['fillcolor_11',['fillColor',['../class_color_setting.html#ad09356b8bb6adb740bba91a8931ca4ce',1,'ColorSetting']]],
-  ['filter_12',['Column Based Filter',['../group__section__smart__filter.html#autotoc_md29',1,'']]],
+  ['filter_12',['Column Based Filter',['../group__section__smart__filter.html#autotoc_md31',1,'']]],
   ['filter_13',['filter',['../class_file_list.html#a4af63a3b60a3bafd90f96a0b6343b5ca',1,'FileList']]],
-  ['filter_20value_14',['Filter Value',['../group__section__smart__filter.html#autotoc_md30',1,'']]],
+  ['filter_20value_14',['Filter Value',['../group__section__smart__filter.html#autotoc_md32',1,'']]],
   ['filtering_20in_20listview_15',['The Smart Filtering in ListView',['../group__section__smart__filter.html',1,'']]],
-  ['filters_16',['Grouping of Filters',['../group__section__smart__filter.html#autotoc_md32',1,'']]],
-  ['filters_20through_20operators_17',['Combination of Filters through Operators',['../group__section__smart__filter.html#autotoc_md31',1,'']]],
+  ['filters_16',['Grouping of Filters',['../group__section__smart__filter.html#autotoc_md34',1,'']]],
+  ['filters_20through_20operators_17',['Combination of Filters through Operators',['../group__section__smart__filter.html#autotoc_md33',1,'']]],
   ['fixedview_18',['FixedView',['../group__section__enum.html#gada45c27422d283cabd4410c383d233eb',1,'LsbViewSchema.dox']]],
   ['fixedview_19',['fixedView',['../class_split_layout.html#ab5f6264b7baecca41e3f75a5118dcf58',1,'SplitLayout']]],
   ['flags_20',['Flags',['../group__section__enum.html#gga0ddb4b1aeb726fd7ea27c11ef094d349a4ea7801f17a4e5485e8b050c052fb443',1,'LsbViewSchema.dox']]],
@@ -30,5 +30,5 @@ var searchData=
   ['fontstyle_27',['FontStyle',['../group__section__enum.html#ga5e5699dd6b22c785fd82a0e87f2c5bfe',1,'LsbViewSchema.dox']]],
   ['fontweight_28',['FontWeight',['../group__section__enum.html#gaecff23ba4a68486421bcea57e095fe66',1,'LsbViewSchema.dox']]],
   ['forecolor_29',['foreColor',['../class_highlight_setting.html#af32501198d998031d64019f77fbae6dd',1,'HighlightSetting::foreColor'],['../class_row_style.html#ab688a6e6c89d612b83625b87e2f8ef13',1,'RowStyle::foreColor']]],
-  ['format_30',['format',['../group__section__smart__time.html#autotoc_md25',1,'Smart format'],['../group__section__smart__time.html#autotoc_md28',1,'Smart format'],['../group__section__smart__time.html#autotoc_md27',1,'Standard format'],['../group__section__smart__time.html#autotoc_md24',1,'Standard ISO format']]]
+  ['format_30',['format',['../group__section__smart__time.html#autotoc_md27',1,'Smart format'],['../group__section__smart__time.html#autotoc_md30',1,'Smart format'],['../group__section__smart__time.html#autotoc_md29',1,'Standard format'],['../group__section__smart__time.html#autotoc_md26',1,'Standard ISO format']]]
 ];

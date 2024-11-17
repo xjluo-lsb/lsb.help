@@ -9,5 +9,6 @@ var searchData=
   ['whentonotify_6',['whenToNotify',['../class_text_input.html#a7478b92c6b0f790322435be3b24d2a28',1,'TextInput']]],
   ['width_7',['width',['../class_column.html#aaf2c8015e5101900b21ec6e67ab7f45a',1,'Column::width'],['../class_table_column.html#aa030cf3e59b1f6aab62d0262e2d0375a',1,'TableColumn::width']]],
   ['window_8',['window',['../group__section__ui.html#autotoc_md1',1,'Main window'],['../group__section__ui.html#autotoc_md8',1,'View window']]],
-  ['windows_20strong_20menu_9',['The &lt;strong&gt;Windows&lt;/strong&gt; menu',['../group__section__ui.html#autotoc_md4',1,'']]]
+  ['windows_20strong_20menu_9',['The &lt;strong&gt;Windows&lt;/strong&gt; menu',['../group__section__ui.html#autotoc_md4',1,'']]],
+  ['write_20a_20lsb_20view_10',['Write a LSB view',['../group__section__create__view.html#autotoc_md23',1,'']]]
 ];
