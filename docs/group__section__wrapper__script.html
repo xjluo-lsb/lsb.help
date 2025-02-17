@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Leave Script Behind Document: Section_wrapper_script</title>
+<title>Leave Script Behind Document: The Wrapper Script for Shells</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,10 +84,21 @@ $(function(){ initResizable(false); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Section_wrapper_script</div></div>
+  <div class="headertitle"><div class="title">The Wrapper Script for Shells</div></div>
 </div><!--header-->
 <div class="contents">
-<p>The LSB application uses Lua as internal support script to implement many funtionalities, such as </p>
+<p>In the shell settings, there is a script wrapper used for connecting the user defined script and the LSB view. The user defined script is not sent to the shell process directly. Instead, the script wrapper is the script will be executed, after the placeholders in the wrapper script are replaced with the actual values.</p>
+<p>The LSB predefined several placeholders for establishing the connection. As described in the Shell Setting Editor dialog, </p><ul>
+<li>
+Customized user script - this placeholder is used for including the user defined script in the LSB view. If user wants to sent the scripts defined in the LSB view directly to the shell process, user may set the script wrapper to contain this placeholder only. </li>
+<li>
+Intermediate data file - for many shells, there is no good way to convert script output in plain text into structured data. LSB provides this intermediate data file to capture all the outputs (must be in JSON format) from the user defined script, and then LSB will load and parse the data file to create structure data to be used in the LSB view. If the output from the user defined script is not in JSON format, then the whole output will be recognized as a single string. </li>
+<li>
+First half of signature and Second half of signature - to detect the completion of the wrapper script execution in the shell process, the LSB uses randomly generated signature data that is split into two parts. The two parts are combined and output as a complete signature at the end of the wrapper script. When LSB finds the full signature in the shell output, it knows that the script execution is complete. By splitting the signature into two parts, it ensures that no other part of the script contains/outputs the full signature, preventing LSB from mistakenly thinking the script execution is complete before the last step in the wrapper script. </li>
+<li>
+Path to view file - this placeholder can be used in the wrapper script if it needs to access any file sitting in the same folder where the LSB view file stays. </li>
+</ul>
+<p>When the LSB receives a request to execute a user-defined script, it loads the wrapper script and replaces all the placeholders with actual values. The resulting script is then sent to the shell process for execution, while the LSB continuously monitors the shell output for the full signature. When the full signature appears in the shell output, the LSB recognizes that the script execution is complete. It then attempts to load the intermediate data file, parse the result data from it, and use the result data to refresh the view content and/or update the output parameters. If the full signature is not detected before the timeout, the LSB terminates the script execution, attempts to parse the result data, and refreshes the view content. If failures are captured during script execution, an error message is displayed. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

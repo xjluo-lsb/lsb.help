@@ -11,5 +11,6 @@ var searchData=
   ['straight_8',['Straight',['../group__section__enum.html#ggafd074c27ba0a2809258258751b754f52ab6bd418b8879851e86bcaccd553b74db',1,'LsbViewSchema.dox']]],
   ['string_9',['String',['../group__section__enum.html#gga0ddb4b1aeb726fd7ea27c11ef094d349a27118326006d3829667a400ad23d5d98',1,'LsbViewSchema.dox']]],
   ['swiss_10',['Swiss',['../group__section__enum.html#ggae7247fa9921cce1e792edd0602a500b5a020f758800fd8d186106ca324c700794',1,'LsbViewSchema.dox']]],
-  ['systemcolor_11',['SystemColor',['../group__section__enum.html#gga0ddb4b1aeb726fd7ea27c11ef094d349a564b53806e80c5bf2d87c6ceea57f6a9',1,'LsbViewSchema.dox']]]
+  ['systemcolor_11',['SystemColor',['../group__section__enum.html#gga0ddb4b1aeb726fd7ea27c11ef094d349a564b53806e80c5bf2d87c6ceea57f6a9',1,'LsbViewSchema.dox']]],
+  ['systemconfig_12',['SystemConfig',['../group__section__enum.html#ggaa461cf03f77304025165d20dfa8b54ecaa59948b9e45358eaaaa1b13d9cedc248',1,'LsbViewSchema.dox']]]
 ];

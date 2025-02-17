@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['other_20questions_0',['Other Questions',['../group__section__faq.html',1,'']]]
+  ['questions_0',['Frequently Asked Questions',['../group__section__faq.html',1,'']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Leave Script Behind Document: The LSB views and view repositories</title>
+<title>Leave Script Behind Document: The LSB View Repositories</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,16 +84,22 @@ $(function(){ initResizable(false); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">The LSB views and view repositories</div></div>
+  <div class="headertitle"><div class="title">The LSB View Repositories</div></div>
 </div><!--header-->
 <div class="contents">
-<h2><a class="anchor" id="autotoc_md21"></a>
+<p>The LSB views are managed through view repositories, either locally or remotely. In each of view repositories, the views can be futher categorized through folders (and sub-folders). The LSB will recursively find all the view files under the root folder of a view repository and show them in the Open View dialog. There could be multiple views with the same name in the same view repository, as long as they are put in different folders.</p>
+<h2><a class="anchor" id="autotoc_md25"></a>
 Default View Repository</h2>
-<p>The LSB applciation comes with a default view repository that is available at <a href="https://github.com/xjluo-lsb/lsb.views">https://github.com/xjluo-lsb/lsb.views</a>. When the LSB is launched, if the default view repository is not available, LSB will automatically clone the repository and make the views available to user. The view repository will be named as DefaultViews. This view repository is automatically configured and available in the view repository configuration dialog.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
-User Defined Repositories</h2>
-<p>Users may also define their own repositories to be used in the LSB. As described in the <b>View Repository Editor</b>, user may configure a local only repositor by pointing the local view root to a local folder but not providing a GIT repository URL. In this case, all the views are available locally and not shared with others.</p>
-<p>In the other case, user may also configure a remote view repository by providing both the GIT repository URL and local view root folder. In this case, the content in the GIT repository will be automatically synced to the local folder every time the LSB applciation is launched. In this way, user may easily reuse the LSB views created by others or share the views s/he created with others. </p>
+<p>The LSB applciation comes with a default view repository that is available at <a href="https://github.com/xjluo-lsb/lsb.views">https://github.com/xjluo-lsb/lsb.views</a>. When the LSB is launched, if the default view repository is not available, LSB will automatically clone the repository and make the views available to user. The view repository will be named as DefaultViews. This view repository is automatically configured and it's invisible in the view repository configuration dialog.</p>
+<h2><a class="anchor" id="autotoc_md26"></a>
+User Configured View Repositories</h2>
+<p>Users can configure their own repositories for use in LSB. As described in the <b>View Repository Editor</b>, users can configure a local-only repository by pointing the local view root to a local folder without providing a GIT repository URL. In this case, all views from this repository are available locally and not shared with others.</p>
+<p>Users can also configure a remote view repository by providing both the GIT repository URL and the local view root folder. In this case, all LSB views in the GIT repository will be automatically synced to the local folder each time the LSB application is launched. This allows users to easily reuse LSB views created by others or share their own views with others.</p>
+<p>For the community version, users can use the default view repository that syncs from a repository hosted on GitHub. Additionally, users can add one local repository for creating and managing LSB views. However, adding remote repositories or more than one local repository is not supported. For the paid version, there are no limitations. Users can add as many remote repositories as they want, and all these repositories will be automatically synced during the launch of LSB. Users can also add as many local repositories as they want, although this might not be a strong need.</p>
+<p>In the view repository setting, user may also temporarily enable/disable a view repository by check/uncheck "The repository is enabled to use the views hosted in it". When there are too many views available through multiple view repository, this might be helpful to shorten the view list in the Open View dialog.</p>
+<h2><a class="anchor" id="autotoc_md27"></a>
+Sample Views</h2>
+<p>In the DefaultViews view repository, the LSB application already provides a set of sample views under the samples folder. These views are used to demonstrate what view controls are available in LSB, what a LSB view can do, how parameters are transmitted around, etc. They are good examples for learning how to create your down LSB view. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

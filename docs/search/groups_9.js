@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['questions_0',['Other Questions',['../group__section__faq.html',1,'']]]
+  ['repositories_0',['The LSB View Repositories',['../group__section__views.html',1,'']]]
 ];

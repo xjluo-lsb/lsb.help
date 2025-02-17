@@ -1,8 +1,21 @@
 var searchData=
 [
-  ['general_0',['General',['../group__section__settings.html#autotoc_md15',1,'']]],
-  ['get_1',['Get',['../group__section__enum.html#gga4353a75834bb35c4acd80b51434eef59ac55582518cba2c464f29f5bae1c68def',1,'LsbViewSchema.dox']]],
-  ['group_2',['group',['../class_option.html#ad1aa65cbb4d3584c3352d4e0faf0aea0',1,'Option']]],
-  ['grouping_20of_20filters_3',['Grouping of Filters',['../group__section__smart__filter.html#autotoc_md34',1,'']]],
-  ['groupsize_4',['groupSize',['../class_hex_view.html#a2660c66fa118212b99cd65dc4e464eef',1,'HexView']]]
+  ['backcolor_0',['backColor',['../class_highlight_setting.html#a54691e7549d7d7bfebfeec99ba299265',1,'HighlightSetting::backColor'],['../class_row_style.html#aaf9918547f1e120d693777f229561429',1,'RowStyle::backColor']]],
+  ['background_1',['background',['../class_chart_view.html#af4e4d194026546140b520f2fb5d8665a',1,'ChartView']]],
+  ['barchart_2',['BarChart',['../group__section__enum.html#gga61170955507786cf39f238b8927530b4a3cf967140c7b9d66e292887510ff6ef7',1,'LsbViewSchema.dox']]],
+  ['based_20filter_3',['Column Based Filter',['../group__section__smart__filter.html#autotoc_md36',1,'']]],
+  ['behind_20explained_4',['Leave Script Behind Explained',['../index.html',1,'']]],
+  ['behind_20lsb_5',['Welcome to Leave Script Behind (LSB)!',['../group__section__intro.html#autotoc_md0',1,'']]],
+  ['bold_6',['Bold',['../group__section__enum.html#ggaecff23ba4a68486421bcea57e095fe66a114c3050111d8b8ddd830b99ccebd246',1,'LsbViewSchema.dox']]],
+  ['boolean_7',['Boolean',['../group__section__enum.html#gga0ddb4b1aeb726fd7ea27c11ef094d349a27226c864bac7454a8504f8edb15d95b',1,'LsbViewSchema.dox']]],
+  ['bordercolor_8',['borderColor',['../class_color_setting.html#ab77a7350f729aefbdb00d7c5d77bc395',1,'ColorSetting']]],
+  ['both_9',['Both',['../group__section__enum.html#gga28bfc6cb71b9891a519410e220fe5758a130c5b3473c57faa76e2a1c54e26f88e',1,'Both:&#160;LsbViewSchema.dox'],['../group__section__enum.html#gga80c7c29de5f29b356dcee57eadaddc4da130c5b3473c57faa76e2a1c54e26f88e',1,'Both:&#160;LsbViewSchema.dox']]],
+  ['bottom_10',['Bottom',['../group__section__enum.html#gga674b457ee78cd3b1f5b0aeff81c749a3a2ad9d63b69c4a10a5cc9cad923133bc4',1,'Bottom:&#160;LsbViewSchema.dox'],['../group__section__enum.html#ggada45c27422d283cabd4410c383d233eba2ad9d63b69c4a10a5cc9cad923133bc4',1,'Bottom:&#160;LsbViewSchema.dox'],['../group__section__enum.html#gga308d4cc556b5f464069036637dde61c4a2ad9d63b69c4a10a5cc9cad923133bc4',1,'Bottom:&#160;LsbViewSchema.dox']]],
+  ['boxplot_11',['BoxPlot',['../group__section__enum.html#gga61170955507786cf39f238b8927530b4a0cd3da1f615564e3af50461de24bf19a',1,'LsbViewSchema.dox']]],
+  ['bubblechart_12',['BubbleChart',['../group__section__enum.html#gga61170955507786cf39f238b8927530b4ab26425612c496e805652e82f7fdf573d',1,'LsbViewSchema.dox']]],
+  ['build_13',['build',['../class_version.html#a2b5a3fc44ced494823dbee689ca07b8d',1,'Version']]],
+  ['button_14',['Button',['../class_button.html',1,'']]],
+  ['buttongroup_15',['ButtonGroup',['../class_button_group.html',1,'']]],
+  ['buttons_16',['1.2 Toolbar Buttons',['../group__section__ui.html#autotoc_md7',1,'']]],
+  ['buttonsperrow_17',['buttonsPerRow',['../class_button_group.html#a9b5fa65ec822057cf47126bc9c9f847c',1,'ButtonGroup']]]
 ];
