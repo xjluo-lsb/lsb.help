@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Leave Script Behind Document: How to Test/Debug a LSB View</title>
+<title>Leave Script Behind Document: How to Test / Debug an LSB View</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,24 +84,45 @@ $(function(){ initResizable(false); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">How to Test/Debug a LSB View</div></div>
+  <div class="headertitle"><div class="title">How to Test / Debug an LSB View</div></div>
 </div><!--header-->
 <div class="contents">
-<p>When you are creating a new LSB view, you definitely want to test it before you release it to other users. Here are the steps on how you can test a LSB view locally through the LSB application.</p>
+<h2><a class="anchor" id="autotoc_md45"></a>
+Testing an LSB view</h2>
+<p>An LSB view should be tested before it's released to other users. The LSB application provides multiple features that can help the view creators to test and debug the LSB views, such as local view repository, message logging, etc. Here are the steps on how a view creator can test an LSB view locally through the LSB application.</p>
 <ol>
 <li>
-Create a folder for the view to be created/tested. </li>
+If you haven't had a local view repository created for testing views, then follow the steps below. Otherwise go directly to step 2. <ul>
 <li>
-Create or put the view to be tested in the folder. </li>
+Create a folder locally for all the views to be created/tested. </li>
 <li>
-Launch LSB and open the settings dialog, create a new view repository points to this folder. </li>
+Launch the LSB application and open the settings dialog, create a new view repository points to this folder. </li>
 <li>
-Open the view to be tested in LSB, now you can see the view content. </li>
+No remote GIT URL is needed, this makes it a local view repository. Please be sure to have it enabled so the views in this repository will show up in the <b>"Open a view"</b> dialog. </li>
+</ul>
+</li>
 <li>
-In the logs tab in the view window, you can find how the parameters are populated and how parameters are passed between different view controls in the LSB view. </li>
+Create or put the LSB view to be tested in this local view repository folder. </li>
+<li>
+Open the view to be tested in the LSB application, now you can see the view content. </li>
+<li>
+In the <b>Logs</b> page in the view window, you can find how the parameters are populated and how parameters are passed between different view controls in the LSB view. </li>
 <li>
 In the Lua tab in the view window, you can find all the Lua scripts executed within the view to implement the functionalities, such as parameter check, data generation, etc. </li>
+<li>
+If there are other shell scripts used in the LSB view, there should be more pages available in the LSB view window, each for a different shell type. All the executed shell scripts and the result output to console will all show up there. </li>
 </ol>
+<p>One of the most typical issues is that one user action on the UI doesn't trigger the next step operation. For example, in the previous <a class="el" href="class_parameter.html" title="This is the node for the Parameter. It&#39;s the base class for InputParam and OutputParam.">Parameter</a> Demo sample view, when user select a Web site row in the list view, it didn't trigger the refresh in the Web view. When this happens, there are a few things to check, </p><ul>
+<li>
+Is the output parameter value sent out? If the output parameter name in the list view control is different from the column name or attribute name in data, then there won't be any output parameter message. This could be verified in the parameter change list in the <b>Logs</b> page. </li>
+<li>
+Is the parameter mapping set correctly? If the output parameter has sent out the new value, the next step is to check if the corresponding input parameter in the other control received this change. If there is no event logged in the parameter change list in the <b>Logs</b> page, then please check if the parameter mapping was configured properly. </li>
+<li>
+If it's confirmed that the input parameter received the value change, but the UI still doesn't respond correctly. The next thing to check is the parameter condition for the view control. The condition test result should be logged in the message list. If input parameter changes are detected but the values do not match the condition, the content would not be refreshed. </li>
+</ul>
+<h2><a class="anchor" id="autotoc_md46"></a>
+Module References</h2>
+<p>Even though the LSB view provides the <b>Lua</b> page and other shell pages to show the embedded Lua scripts and shell scripts executed in the LSB view, are difficult to debug directly inside the LSB view. The recommended way for writing embbeded scripts is to write large pieces of scripts in separated script files and add them through the module references. By putting the scripts into dedicated files, it's relative easier to use the tools come with the script language to test and debug. After the script files are tested, the scripts embedded in the LSB view only makes simple calls to the functions defined in the script files. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

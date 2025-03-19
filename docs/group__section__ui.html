@@ -87,10 +87,10 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">The LSB UI</div></div>
 </div><!--header-->
 <div class="contents">
-<p>The LSB application features a multiple window MDI (Multiple Document Interface). It launches with the main window only, which contains the menu bar and the toolbar. When user opens a LSB view file through menu item or toolbar button, the opened LSB view appears in its own separate window. If the user opens the same view file again, a new window is created for that new instance. Regardless of whether the LSB view file is the same or different, each view instance always has its own dedicated window.</p>
+<p>The LSB application features a multiple window multiple document interface (MDI). It launches with the main window only, which contains the menu bar and the toolbar. When user opens a LSB view file through menu item or toolbar button, the opened LSB view appears in its own separate window. If the user opens the same view file again, a new window is created for that new instance of the LSB view. Regardless of whether the LSB view file is the same or different, each view instance always has its own dedicated window.</p>
 <h2><a class="anchor" id="autotoc_md1"></a>
 1. Main window</h2>
-<p>Here's how the main window looks like,</p>
+<p>Here's the main window of the LSB application,</p>
 <div class="image">
 <img src="lsb-main-window.png" alt=""/>
 </div>
@@ -103,15 +103,15 @@ $(function(){ initResizable(false); });
 </div>
 <ul>
 <li>
-<b>Open view ...</b> - This menu item launches the open view dialog for user to select a view file and open as LSB view. </li>
+<b>Open view ...</b> - This menu item launches the <b>"Open a view"</b> dialog for user to select a view file from LSB view list and open as LSB view. </li>
 <li>
-<b>Open recent view</b> - Select a previously opened view file from the sub-menu and open as LSB view. </li>
+<b>Open recent view</b> - This is a sub-menu - each item in the sub-menu stands for an LSB view previously opened. Select an item in the sub-menu will open that previously opened LSB view directly. </li>
 <li>
-<b>Close all views</b> - This will close all the currently opened views. </li>
+<b>Close all views</b> - Selecting this menu item will close all the currently opened LSB views. </li>
 <li>
-<b>Manage view history ...</b> - This menu item launches the view file history management window to configure how the view files are ordered in the opened view history. </li>
+<b>Manage view history ...</b> - This menu item launches the <b>"Manage opened view history"</b> dialog to configure how the previously opened LSB view files are ordered in the <b>"Open recent view"</b> sub-menu. </li>
 <li>
-<b>Exit</b> - This closes all the LSB view windows and exits the LSB application. </li>
+<b>Exit</b> - This menu item closes all the opened LSB view windows and exits the LSB application. </li>
 </ul>
 <h4><a class="anchor" id="autotoc_md4"></a>
 1.1.2 The <b>Windows</b> menu</h4>
@@ -120,9 +120,9 @@ $(function(){ initResizable(false); });
 </div>
 <ul>
 <li>
-<b>Views</b> - This sub-menu contains a list of all currently opened LSB views. Selecting an entry in the sub-menu will bring the corresponding LSB view into front and make it the active view. </li>
+<b>Views</b> - This is also a sub-menu. It contains a list of all currently opened LSB views. Selecting an item in the sub-menu will bring the corresponding LSB view into front and make it the active view. </li>
 <li>
-<b>Global log window</b> - This menu item brings the global logging window into front. The global logging window logs the view open/close events and all the application level events. </li>
+<b>Global log window</b> - This is a toggle menu item. It controls the visibility of the <b>"Global logging"</b> window. If the <b>"Global logging"</b> window is not visible, selecting this item will show the <b>"Global logging"</b> window and bring it into front. Otherwise, if the <b>"Global logging"</b> window is already visible, then selecting this menu item will hide it, not close it. The <b>"Global logging"</b> window logs the view open/close events and all the other application level events. </li>
 </ul>
 <h4><a class="anchor" id="autotoc_md5"></a>
 1.1.3 The <b>Option</b> menu</h4>
@@ -131,7 +131,7 @@ $(function(){ initResizable(false); });
 </div>
 <ul>
 <li>
-<b>Settings ...</b> - This is the only menu item in this menu. It launches the LSB settings dialog for user to change configurations for the LSB application, from generic settings to shell configurations and view repository configurations. </li>
+<b>Settings ...</b> - Currently this is the only menu item in the <b>"Option"</b> menu. It launches the LSB <b>"Settings"</b> dialog for user to change the various configurations for the LSB application, from the <b>"General"</b> settings to <b>"Shells"</b> configurations and <b>"Views"</b> repository configurations. </li>
 </ul>
 <h4><a class="anchor" id="autotoc_md6"></a>
 1.1.4 The <b>Help</b> menu</h4>
@@ -140,77 +140,78 @@ $(function(){ initResizable(false); });
 </div>
 <ul>
 <li>
-<b>Help ...</b> - This shows the help content for the LSB application, including the content you are reading now. </li>
+<b>Help ...</b> - This menu item shows the <b>"LSB Help"</b> window with the help content for the LSB application, including the page you are reading now. </li>
 <li>
-<b>About ...</b> - This shows the about information for the LSB application. </li>
+<b>About ...</b> - This menu item shows the <b>"About LSB"</b> dialog which contains the information about the LSB application, including the credits to the SDK libraries and other resources used for the LSB development. </li>
 </ul>
 <h3><a class="anchor" id="autotoc_md7"></a>
 1.2 Toolbar Buttons</h3>
-<p>In the main window, there is also a toolbar that contains a set of buttons for the functionalities. The funtionalities provided by these buttons are already available through the menu items in the main menu.</p>
+<p>In the main window, there is a toolbar that contains a set of buttons for quick access to certain functionalities. The funtionalities provided by these buttons are also available through the menu items in the main menu.</p>
 <div class="image">
 <img src="lsb-main-window.png" alt=""/>
 </div>
 <ul>
 <li>
-<b>Open view</b> - This button has the same functionality as the "Open view ..." menu item under <b>File</b> menu. Clicking the button will launch the open view dialog to select and open LSB view. Besides, the little triangle next to it triggers a drop down menu that shows the same view history as the <b>Open recent view</b> does. </li>
+<b>Open view</b> - This button has the same functionality as the <b>"Open view ..."</b> menu item under the <b>"File"</b> menu. Clicking on the button will launch the <b>"Open a view"</b> dialog to select and open an LSB view. Besides, the little triangle next to the button triggers a drop-down menu that shows the same view history as the <b>"Open recent view"</b> sub-menu does. Selecting an item in the drop-down menu will open the corresponding LSB view file directly. </li>
 <li>
-<b>Close all views</b> - This button is same as the <b>Close all views</b> menu item under <b>File</b> menu, it closes all currently open LSB views. </li>
+<b>Close all views</b> - This button is same as the <b>"Close all views"</b> menu item under the <b>"File"</b> menu, it closes all currently opened LSB views. </li>
 <li>
-<b>Manage history</b> - This is another entry to the view file history management window. </li>
+<b>Manage history</b> - This is another entry to launch the <b>"Manage opened view history"</b> dialog for manipulating how the items in the <b>Open recent view</b> sub-menu are ordered. </li>
 <li>
-<b>View</b> - This button will launch the "Select view" dialog for user to select a view from a view list which contains all currently opened LSB views and make the selected view active. There is also a button with little triangle next to it which triggers a drop down menu that contains menu items mapped to all currently open views. Select a menu item here will bring the corresponding LSB view into front and make it active. </li>
+<b>View</b> - This button is only enabled if there is at least one LSB view opened. It will launch the <b>"Select view"</b> dialog for user to select a view from a view list which contains all currently opened LSB views and make the selected view active. There is also a button with little triangle next to it which triggers a drop-down menu that contains menu items mapped to all currently opened LSB views. Select a menu item there will bring the corresponding opened LSB view into front and make it active. </li>
 <li>
-<b>Log window</b> - This button brings the global logging window into front. </li>
+<b>Log window</b> - This button toggles the <b>"Global logging"</b> window. When the <b>"Global logging"</b> window is invisible, clicking on the button will show the window and bring it into front. </li>
 <li>
-<b>Settings</b> - This button launches the settings dialog for the LSB application. </li>
+<b>Settings</b> - This button launches the <b>"Settings"</b> dialog for user to make changes in the configuration for the LSB application. </li>
 <li>
-<b>Help page</b> - This button shows the help window for the LSB application. </li>
+<b>Help page</b> - This button shows the <b>"LSB Help"</b> window with the help content for the LSB application. </li>
 <li>
-<p class="startli"><b>About LSB</b> - This button shows the about window for the LSB application.</p>
+<p class="startli"><b>About LSB</b> - This button shows the <b>"About LSB"</b> dialog with the about information for the LSB application.</p>
 <p class="endli"></p>
 </li>
 </ul>
 <h2><a class="anchor" id="autotoc_md8"></a>
-2. View window</h2>
-<p>A view window typically consists of at least four pages, <b>View</b>, <b>Logs</b>, <b>Lua</b> and <b><a class="el" href="class_about.html" title="This is the node for defining content of about information in a LSB view.">About</a></b>.</p>
+2. LSB View window</h2>
+<p>An LSB view window typically consists of at least four pages, <b>View</b>, <b>Logs</b>, <b>Lua</b> and <b>About</b>.</p>
 <h3><a class="anchor" id="autotoc_md9"></a>
-2.1 View</h3>
-<p>The <b>View</b> page displays content that is created based on the configurations in the LSB view file. Various controls, such as input controls and data view controls, are arranged using different layout controls inside a view. In this screenshot from the "Chart view sample," the root layout control is a tabLayout control, which consists of four tabs. Each tab uses a tableLayout control to organize four chartView controls into a 2x2 table, presenting different types of charts.</p>
+2.1 View page</h3>
+<p>The <b>View</b> page displays content that is created based on the configurations in the LSB view file. Various controls, such as input controls and data view controls, are arranged using different layout controls inside a view. In this screenshot from the "Chart view sample," the root control is a <a class="el" href="class_tab_layout.html" title="The TabLayout is a layout control that arranges child views in tab pages.">TabLayout</a> layout control, which consists of four tabs, "Bar Column", "Data in range", "Pie / Doughnut / Bubble", and "Scatter / Line / Area". Each tab utilizes a <a class="el" href="class_table_layout.html" title="This TableLayout is a layout control that arranges multiple child views in a table layout.">TableLayout</a> control to organize four <a class="el" href="class_chart_view.html" title="This ChartView is a data view control that uses the wxChart control to render data as charts.">ChartView</a> controls into a 2x2 table, presenting different types of charts respectively.</p>
 <div class="image">
 <img src="lsb-view-view.png" alt=""/>
 </div>
 <h3><a class="anchor" id="autotoc_md10"></a>
-2.2 Logs</h3>
-<p>The <b>Logs</b> page captures local logging, detailing all events within the LSB view instance. For example, each view control performs a condition check (defaulting to empty code, meaning the condition always returns a true value) to determine if the data source for the view control should be accessed and the content should be updated. The results of these condition checks are logged in the message list in the top. When an output parameter value changes in one view control and subsequently triggers an input parameter value change in another view control, both events are recorded in the parameter change list in the bottom. This feature assists view creators in debugging by verifying whether the correct parameter values are sent from a view control and properly transmitted to target view controls.</p>
+2.2 Logs page</h3>
+<p>The <b>Logs</b> page captures local logging, detailing all events raised within the LSB view instance. For example, each view control inside an LSB view performs a condition check (defaulting to empty code though, meaning the condition always returns a true value) to determine if the data source for the view control should be accessed/evaluated and the content of the view control should be updated. The results of these condition checks are logged in the message list in the top. When an output parameter value changes in one view control and then subsequently triggers an input parameter value change in another view control, both events are recorded in the parameter change list in the bottom. This feature can assist the view creators in debugging by verifying whether the correct parameter values are sent out from a view control (through output parameters) and properly transmitted to target view controls(through input parameters).</p>
 <div class="image">
 <img src="lsb-view-logs.png" alt=""/>
 </div>
 <h3><a class="anchor" id="autotoc_md11"></a>
-2.3 Lua</h3>
-<p>The <b>Lua</b> page contains Lua code snippets executed within the LSB view instance. Even if no explicit Lua script is used in the view, this page remains there due to implicit functions implemented in Lua that run from view loading to parameter checking. For instance, it automatically creates an <code>lsb</code> object (table) in the Lua runspace to share the view path, file, and name, etc. with other Lua code in the view. Each view control's conditions are also written in Lua only. The content on this page is read-only and displays the executed Lua code with syntax highlighting.</p>
+2.3 Lua page</h3>
+<p>The <b>Lua</b> page contains Lua code snippets executed within the LSB view instance. Even if no explicit Lua script is used in an LSB view, this page remains there due to implicit functions implemented in Lua in each LSB view. These Lua scripts run from view loading to parameter checking. For instance, it automatically creates an <code>lsb</code> object (a table in Lua) in the Lua runspace to share the view path, file, and name, etc. with other Lua code in the view. The check conditions for each view control support Lua language only. The content in this page is read-only and displays the executed Lua code with syntax highlighting.</p>
 <div class="image">
 <img src="lsb-view-lua.png" alt=""/>
 </div>
 <h3><a class="anchor" id="autotoc_md12"></a>
-2.4 About</h3>
-<p>The <b><a class="el" href="class_about.html" title="This is the node for defining content of about information in a LSB view.">About</a></b> page displays information about the LSB view. The content on this page is configurable within the LSB view file and can be generated from the view file itself or linked directly to a web page available on the Internet.</p>
+2.4 About page</h3>
+<p>The <b>About</b> page displays information about the LSB view. The content on this page is configurable within the LSB view file. It can be generated from the view file itself or linked directly to a web page available on the Internet.</p>
 <div class="image">
 <img src="lsb-view-about.png" alt=""/>
 </div>
 <h3><a class="anchor" id="autotoc_md13"></a>
 2.5 Other pages</h3>
-<p>If the view author uses shells like PowerShell, Bash, or Zsh to implement functionalities for the LSB view, new pages will be added for each type of shells used. This per shell page displays the executed shell scripts along with their outputs. Both the view author and end users can use this page to review the executed shell commands and their generated outputs.</p>
+<p>If the view author uses shells like PowerShell, Bash, or Zsh to implement functionalities for the LSB view, new pages will be added for each type of shells used respectively. This per shell page displays the executed shell scripts along with their outputs. Both the view author and end users can use this page to review the executed shell commands and their generated outputs, to ensure the view content is updated as expected.</p>
 <h2><a class="anchor" id="autotoc_md14"></a>
 3. Dialogs</h2>
+<p>There are a number dialogs employeed in the LSB application to display data and update configurations for the application.</p>
 <h3><a class="anchor" id="autotoc_md15"></a>
 3.1 Open a view dialog</h3>
-<p>The <b>Open a view</b> dialog helps user to find, select, and open an LSB view file within the LSB application. It consists of a view list and a preview pane. When user selects an LSB view from the view list, its corresponding information is displayed in the preview pane. The view list supports smart filter, see <a class="el" href="group__section__smart__filter.html">The Smart Filtering in ListView</a> for more information. This enables user to quickly locate the view through combination of column based filters. When a view is selected, user may also click on the <b>Open the view folder</b> button to open the folder that contains the view file using the OS native file management application, such as the <b>File Explorer</b> on Windows, <b>Safari</b> on Mac OS X, etc.</p>
+<p>The <b>Open a view</b> dialog helps user to find, select, and open an LSB view file with the LSB application. It consists of a view list and a preview pane. It automatically searches all configured view repositories to find LSB view files and adds them into the view list. When user selects an LSB view from the view list, the view information is displayed in the preview pane. The view list supports smart filter, see <a class="el" href="group__section__smart__filter.html">The Smart Filtering in ListView</a> for more information. The smart filter enables user to quickly locate a view through combination of column based filters. When an LSB view is selected, user may also click on the <b>"Open the view folder"</b> button to open the folder that contains the view file using the OS native file management application, such as the <b>File Explorer</b> on Windows, the <b>Finder</b> application on Mac OS X, etc.</p>
 <div class="image">
 <img src="lsb-open-view.png" alt=""/>
 </div>
 <h3><a class="anchor" id="autotoc_md16"></a>
 3.2 Manage opened view history</h3>
-<p>This is the dialog that manages how the view history is displayed.</p>
+<p>This is the dialog that manages how the view history is displayed in the <b>"Open recent view"</b> sub-menu under the <b>"File"</b> menu.</p>
 <div class="image">
 <img src="lsb-manage-history.png" alt=""/>
 </div>
@@ -218,31 +219,31 @@ $(function(){ initResizable(false); });
 <li>
 <b>History count settings</b> <ul>
 <li>
-<b>Maximum item count in menu</b> - This configures how many items will be displayed in the view history menu. </li>
+<b>Maximum item count in menu</b> - This setting controls how many items will be displayed in the <b>"Open recent view"</b> sub-menu under the <b>"File"</b> menu. The value should be within the range [1, 9] inclusive, and should be less than the value of <b>Maximum item count in history file</b>. </li>
 <li>
-<b>Maximum item count in history file</b> - This configures how many items will have the history data stored in the history data file. </li>
+<b>Maximum item count in history file</b> - This setting controls how many items will have the opened history data stored in the history data file. The value should be within the range [1, 99] inclusive, and should be larger than the value of <b>Maximum item count in menu</b>. </li>
 </ul>
 </li>
 <li>
 <b>How are the view files ordered</b> <ul>
 <li>
-<b>Most recently used time</b> - When this is selected, the view files are ordered by most recently used time </li>
+<b>Most recently used time</b> - When this option is selected, the view files are ordered by most recently used time. </li>
 <li>
-<b>How many times view used</b> - When this is selected, the view files are ordered by how many times the view is used </li>
+<b>How many times view used</b> - When this option is selected, the view files are ordered by how many times the view file is opened. </li>
 </ul>
 </li>
 <li>
-<b>View file history</b> - This is a list of view files opened before. They are ordered based on setting configured above. </li>
+<b>View file history</b> - This is a list of view files opened previously. They are ordered based on the option selected above - by most recently used time or by how many times view used. </li>
 </ul>
 <h3><a class="anchor" id="autotoc_md17"></a>
 3.3 Select view</h3>
-<p>This dialog is launched when user clicks on the <b>View</b> button in the main toolbar. It shows the full list of currently open LSB views. If user selects a view from the list and clicks <b>OK</b> button, the selected view will be brought into front and become an active view.</p>
+<p>This dialog is launched when user clicks on the <b>View</b> button in the toolbar in the main window. It shows the full list of currently opened LSB views. If user selects a view from the list and then clicks the <b>OK</b> button, the selected view will be brought into front and become an active view.</p>
 <div class="image">
 <img src="lsb-view-list.png" alt=""/>
 </div>
 <h3><a class="anchor" id="autotoc_md18"></a>
 3.4 Settings</h3>
-<p>The LSB settings dialog is explained in the next section <a class="el" href="group__section__settings.html">The LSB Settings</a>. </p>
+<p>The LSB <b>"Settings"</b> dialog is explained in the next section <a class="el" href="group__section__settings.html">The LSB Settings</a>. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

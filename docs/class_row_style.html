@@ -91,14 +91,17 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>This node defines the font and style setting for condition matched rows in <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the very common list view control to display data in r...">ListView</a> and <a class="el" href="class_tree_list_view.html" title="This TreeListView is a data view control for displaying hierachy data in multiple columns.">TreeListView</a>.  
+<p>This node defines the font and style setting for condition matched rows in the <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the commonly used list view control to display data in...">ListView</a> and <a class="el" href="class_tree_list_view.html" title="This TreeListView is a data view control for displaying hierachy data in multiple columns.">TreeListView</a> control.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a876d153d12332e0bb1d28978c09de2ee" id="r_a876d153d12332e0bb1d28978c09de2ee"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a876d153d12332e0bb1d28978c09de2ee">condition</a></td></tr>
-<tr class="memdesc:a876d153d12332e0bb1d28978c09de2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Mandatory] This string attribute contains the row condition written in Lua script. The matched row will be displayed using configured font and colors.  <br /></td></tr>
+<tr class="memdesc:a876d153d12332e0bb1d28978c09de2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Mandatory] This string attribute contains the row condition written the same syntax as the smart filter for <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the commonly used list view control to display data in...">ListView</a>, see <a class="el" href="group__section__smart__filter.html">The Smart Filtering in ListView</a>. The matched row will be displayed using the configured font and colors.  <br /></td></tr>
 <tr class="separator:a876d153d12332e0bb1d28978c09de2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cd674d3f25c2b38c22c06f506de16e" id="r_a86cd674d3f25c2b38c22c06f506de16e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_font_desc.html">FontDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86cd674d3f25c2b38c22c06f506de16e">font</a></td></tr>
+<tr class="memdesc:a86cd674d3f25c2b38c22c06f506de16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This attribute defines the font to be used for the matched row.  <br /></td></tr>
+<tr class="separator:a86cd674d3f25c2b38c22c06f506de16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab688a6e6c89d612b83625b87e2f8ef13" id="r_ab688a6e6c89d612b83625b87e2f8ef13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab688a6e6c89d612b83625b87e2f8ef13">foreColor</a></td></tr>
 <tr class="memdesc:ab688a6e6c89d612b83625b87e2f8ef13"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This attribute defines foreground color for the matched row.  <br /></td></tr>
 <tr class="separator:ab688a6e6c89d612b83625b87e2f8ef13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,7 +110,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aaf9918547f1e120d693777f229561429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This node defines the font and style setting for condition matched rows in <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the very common list view control to display data in r...">ListView</a> and <a class="el" href="class_tree_list_view.html" title="This TreeListView is a data view control for displaying hierachy data in multiple columns.">TreeListView</a>. </p>
+<div class="textblock"><p>This node defines the font and style setting for condition matched rows in the <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the commonly used list view control to display data in...">ListView</a> and <a class="el" href="class_tree_list_view.html" title="This TreeListView is a data view control for displaying hierachy data in multiple columns.">TreeListView</a> control. </p>
 <ul>
 <li>font - This child node defines the font to be used in the matched row. </li>
 </ul>
@@ -140,7 +143,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Mandatory] This string attribute contains the row condition written in Lua script. The matched row will be displayed using configured font and colors. </p>
+<p>[Mandatory] This string attribute contains the row condition written the same syntax as the smart filter for <a class="el" href="class_list_view.html" title="This ListView is a data view control that uses the commonly used list view control to display data in...">ListView</a>, see <a class="el" href="group__section__smart__filter.html">The Smart Filtering in ListView</a>. The matched row will be displayed using the configured font and colors. </p>
+
+</div>
+</div>
+<a id="a86cd674d3f25c2b38c22c06f506de16e" name="a86cd674d3f25c2b38c22c06f506de16e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86cd674d3f25c2b38c22c06f506de16e">&#9670;&#160;</a></span>font</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_font_desc.html">FontDesc</a> RowStyle::font</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[Optional] This attribute defines the font to be used for the matched row. </p>
 
 </div>
 </div>

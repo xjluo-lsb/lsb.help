@@ -91,7 +91,7 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>This <a class="el" href="class_hex_view.html" title="This HexView is a data view control that displays binary data in the hexadecimal format.">HexView</a> is a data view control that displays binary data in the hexadecimal format.  
+<p>This <a class="el" href="class_hex_view.html" title="This HexView control is a data view control that displays binary data in the hexadecimal format.">HexView</a> control is a data view control that displays binary data in the hexadecimal format.  
  <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for HexView:</div>
@@ -101,15 +101,15 @@ Inheritance diagram for HexView:</div>
   <map id="HexView_map" name="HexView_map">
 <area href="class_view_elements.html" title="This group defines the child nodes for all views." alt="ViewElements" shape="rect" coords="0,56,128,80"/>
 <area href="class_view_attributes.html" title="This group defines the attributes for all views." alt="ViewAttributes" shape="rect" coords="138,56,266,80"/>
-<area href="class_component_elements.html" title="This is a node group, it defines the child nodes for all components, which is base of all view contro..." alt="ComponentElements" shape="rect" coords="0,0,128,24"/>
-<area href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components,..." alt="ComponentAttributes" shape="rect" coords="138,0,266,24"/>
+<area href="class_component_elements.html" title="This is a node group, it defines the common child nodes for all components. It is the base child node..." alt="ComponentElements" shape="rect" coords="0,0,128,24"/>
+<area href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components...." alt="ComponentAttributes" shape="rect" coords="138,0,266,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a2660c66fa118212b99cd65dc4e464eef" id="r_a2660c66fa118212b99cd65dc4e464eef"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2660c66fa118212b99cd65dc4e464eef">groupSize</a></td></tr>
-<tr class="memdesc:a2660c66fa118212b99cd65dc4e464eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This defines how many bytes are displayed in each group in a line. The default value is 0 which means no groups.  <br /></td></tr>
+<tr class="memdesc:a2660c66fa118212b99cd65dc4e464eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This defines how many bytes are displayed in each group in a line. The default value is 0 which means the data is not grouped.  <br /></td></tr>
 <tr class="separator:a2660c66fa118212b99cd65dc4e464eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f3b4d01325cf174b9446bbc9a6a81f" id="r_a79f3b4d01325cf174b9446bbc9a6a81f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79f3b4d01325cf174b9446bbc9a6a81f">lineSize</a></td></tr>
 <tr class="memdesc:a79f3b4d01325cf174b9446bbc9a6a81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This defines how many bytes are displayed in each line. The default value is 16.  <br /></td></tr>
@@ -118,10 +118,10 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a6ce58d361d797f6ad7586089bfb314fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This defines how many digits are used to display the offset for the data. The default value is 8.  <br /></td></tr>
 <tr class="separator:a6ce58d361d797f6ad7586089bfb314fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa93819af5767e68096dd1a28949030ae" id="r_aa93819af5767e68096dd1a28949030ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa93819af5767e68096dd1a28949030ae">showOffset</a></td></tr>
-<tr class="memdesc:aa93819af5767e68096dd1a28949030ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean flag controls if the offset area is shown in the <a class="el" href="class_hex_view.html" title="This HexView is a data view control that displays binary data in the hexadecimal format.">HexView</a> control. The default value is true.  <br /></td></tr>
+<tr class="memdesc:aa93819af5767e68096dd1a28949030ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean flag controls if the offset area is shown in the <a class="el" href="class_hex_view.html" title="This HexView control is a data view control that displays binary data in the hexadecimal format.">HexView</a> control. The default value is true.  <br /></td></tr>
 <tr class="separator:aa93819af5767e68096dd1a28949030ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0e53f900a23893842ed5dcb409d50c8" id="r_ac0e53f900a23893842ed5dcb409d50c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0e53f900a23893842ed5dcb409d50c8">showText</a></td></tr>
-<tr class="memdesc:ac0e53f900a23893842ed5dcb409d50c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean flag controls if the text form for the bytes is shown in the control. The default value is true.  <br /></td></tr>
+<tr class="memdesc:ac0e53f900a23893842ed5dcb409d50c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean flag controls if the text form of the bytes is shown in the control. The default value is true.  <br /></td></tr>
 <tr class="separator:ac0e53f900a23893842ed5dcb409d50c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_view_attributes"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_view_attributes')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_view_attributes.html">ViewAttributes</a></td></tr>
 <tr class="memitem:abbaf459fa44f0765a2b15f90516f433c inherit pub_attribs_class_view_attributes" id="r_abbaf459fa44f0765a2b15f90516f433c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__section__enum.html#ga3a499a6fe47e9271355afa8b2739fe6b">LoadDataAt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_attributes.html#abbaf459fa44f0765a2b15f90516f433c">loadDataAt</a></td></tr>
@@ -133,14 +133,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a67c567751701f4329b92200ac7074a3f inherit pub_attribs_class_component_attributes"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This <a class="el" href="class_hex_view.html" title="This HexView is a data view control that displays binary data in the hexadecimal format.">HexView</a> is a data view control that displays binary data in the hexadecimal format. </p>
-<p>The <a class="el" href="class_hex_view.html" title="This HexView is a data view control that displays binary data in the hexadecimal format.">HexView</a> displays each byte in the binary data as two-digit hexadecimal. User may customize the control to display offset for each line and also show the text form for each byte if it's visual character, otherwise a dot '.' is displayed for the byte. Besides, user may also customize how many bytes are displayed in each line and how many bytes should be grouped in each line. The byte count in line should be multiplies of byte count in each group.</p>
-<p>The <a class="el" href="class_hex_view.html" title="This HexView is a data view control that displays binary data in the hexadecimal format.">HexView</a> node contains following nodes,</p><ul>
+<div class="textblock"><p>This <a class="el" href="class_hex_view.html" title="This HexView control is a data view control that displays binary data in the hexadecimal format.">HexView</a> control is a data view control that displays binary data in the hexadecimal format. </p>
+<p>The <a class="el" href="class_hex_view.html" title="This HexView control is a data view control that displays binary data in the hexadecimal format.">HexView</a> displays each byte in the binary data as two-digit hexadecimal. User may customize the control to display offset for each line and also show the text form for each byte if it's visual character, otherwise a dot '.' is displayed for the byte. Besides, user may customize how many bytes are displayed in each line and how many bytes should be grouped in each line. The byte count in line should be multiplies of byte count in each group.</p>
+<p>The <a class="el" href="class_hex_view.html" title="This HexView control is a data view control that displays binary data in the hexadecimal format.">HexView</a> node contains following nodes,</p><ul>
 <li>All the nodes defined in the <a class="el" href="class_view_elements.html" title="This group defines the child nodes for all views.">ViewElements</a>.</li>
-<li>The font node in type of <a class="el" href="class_font_desc.html" title="This is the node that defines font description, for defining fonts to be used in LSB views.">FontDesc</a> that defines which font is used to display the content in the <a class="el" href="class_hex_view.html" title="This HexView is a data view control that displays binary data in the hexadecimal format.">HexView</a>.</li>
-<li>The highlights node which contains a list of highlight nodes in type of HexViewHighlightSettings that defines the highlight styles to be used in the <a class="el" href="class_hex_view.html" title="This HexView is a data view control that displays binary data in the hexadecimal format.">HexView</a> control.</li>
+<li>The font node in type of <a class="el" href="class_font_desc.html" title="This is the node that defines font description, for defining fonts to be used in LSB views.">FontDesc</a> that defines which font is used to display the content in the <a class="el" href="class_hex_view.html" title="This HexView control is a data view control that displays binary data in the hexadecimal format.">HexView</a>.</li>
+<li>The highlights node which contains a list of highlight nodes in type of HexViewHighlightSettings that defines the highlight styles to be used in the <a class="el" href="class_hex_view.html" title="This HexView control is a data view control that displays binary data in the hexadecimal format.">HexView</a> control.</li>
 </ul>
-<p>The <a class="el" href="class_hex_view.html" title="This HexView is a data view control that displays binary data in the hexadecimal format.">HexView</a> node contains following attributes,</p><ul>
+<p>The <a class="el" href="class_hex_view.html" title="This HexView control is a data view control that displays binary data in the hexadecimal format.">HexView</a> node contains following attributes,</p><ul>
 <li>All the attributes defined in the <a class="el" href="class_view_attributes.html" title="This group defines the attributes for all views.">ViewAttributes</a>.</li>
 <li>Plus following attributes, </li>
 </ul>
@@ -157,7 +157,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Optional] This defines how many bytes are displayed in each group in a line. The default value is 0 which means no groups. </p>
+<p>[Optional] This defines how many bytes are displayed in each group in a line. The default value is 0 which means the data is not grouped. </p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Optional] This boolean flag controls if the offset area is shown in the <a class="el" href="class_hex_view.html" title="This HexView is a data view control that displays binary data in the hexadecimal format.">HexView</a> control. The default value is true. </p>
+<p>[Optional] This boolean flag controls if the offset area is shown in the <a class="el" href="class_hex_view.html" title="This HexView control is a data view control that displays binary data in the hexadecimal format.">HexView</a> control. The default value is true. </p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Optional] This boolean flag controls if the text form for the bytes is shown in the control. The default value is true. </p>
+<p>[Optional] This boolean flag controls if the text form of the bytes is shown in the control. The default value is true. </p>
 
 </div>
 </div>

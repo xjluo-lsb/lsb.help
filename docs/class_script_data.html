@@ -91,20 +91,20 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>This is the node that defines the configuration for generatign data through script execution.  
+<p>This is the node that defines the configuration for generating data through script execution.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a100cca645e0b46bfacaa4c1892deadd8" id="r_a100cca645e0b46bfacaa4c1892deadd8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a100cca645e0b46bfacaa4c1892deadd8">type</a></td></tr>
-<tr class="memdesc:a100cca645e0b46bfacaa4c1892deadd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Mandatory] This attribute defines the type of the script, see shell configuration for supported script types. The Lua is an embedded and always supported script language.  <br /></td></tr>
+<tr class="memdesc:a100cca645e0b46bfacaa4c1892deadd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Mandatory] This attribute defines the type of the script, see <a class="el" href="group__section__settings.html">The LSB Settings</a> on how to configure shells to support more script types. The Lua is an embedded script language and always supported.  <br /></td></tr>
 <tr class="separator:a100cca645e0b46bfacaa4c1892deadd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a749eb6492c5a0d58fb9a1111a2ac6687" id="r_a749eb6492c5a0d58fb9a1111a2ac6687"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a749eb6492c5a0d58fb9a1111a2ac6687">timeout</a></td></tr>
-<tr class="memdesc:a749eb6492c5a0d58fb9a1111a2ac6687"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This attribute defines the timeout for the script execution. The default value is 0, which means it will use the global setting for the script timeout.  <br /></td></tr>
+<tr class="memdesc:a749eb6492c5a0d58fb9a1111a2ac6687"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This attribute defines the timeout for the script execution. The default value is 0, which means it will use the LSB global timeout setting for the script execution timeout.  <br /></td></tr>
 <tr class="separator:a749eb6492c5a0d58fb9a1111a2ac6687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is the node that defines the configuration for generatign data through script execution. </p>
+<div class="textblock"><p>This is the node that defines the configuration for generating data through script execution. </p>
 <ul>
 <li>content - The content of this node is the script to be executed for generating the data. </li>
 </ul>
@@ -121,7 +121,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Optional] This attribute defines the timeout for the script execution. The default value is 0, which means it will use the global setting for the script timeout. </p>
+<p>[Optional] This attribute defines the timeout for the script execution. The default value is 0, which means it will use the LSB global timeout setting for the script execution timeout. </p>
 
 </div>
 </div>
@@ -137,7 +137,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Mandatory] This attribute defines the type of the script, see shell configuration for supported script types. The Lua is an embedded and always supported script language. </p>
+<p>[Mandatory] This attribute defines the type of the script, see <a class="el" href="group__section__settings.html">The LSB Settings</a> on how to configure shells to support more script types. The Lua is an embedded script language and always supported. </p>
 
 </div>
 </div>

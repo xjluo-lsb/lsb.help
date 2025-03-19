@@ -7,5 +7,6 @@ var searchData=
   ['fillcolor_4',['fillColor',['../class_color_setting.html#ad09356b8bb6adb740bba91a8931ca4ce',1,'ColorSetting']]],
   ['filter_5',['filter',['../class_file_list.html#a4af63a3b60a3bafd90f96a0b6343b5ca',1,'FileList']]],
   ['fixedview_6',['fixedView',['../class_split_layout.html#ab5f6264b7baecca41e3f75a5118dcf58',1,'SplitLayout']]],
-  ['forecolor_7',['foreColor',['../class_highlight_setting.html#af32501198d998031d64019f77fbae6dd',1,'HighlightSetting::foreColor'],['../class_row_style.html#ab688a6e6c89d612b83625b87e2f8ef13',1,'RowStyle::foreColor']]]
+  ['font_7',['font',['../class_row_style.html#a86cd674d3f25c2b38c22c06f506de16e',1,'RowStyle']]],
+  ['forecolor_8',['foreColor',['../class_highlight_setting.html#af32501198d998031d64019f77fbae6dd',1,'HighlightSetting::foreColor'],['../class_row_style.html#ab688a6e6c89d612b83625b87e2f8ef13',1,'RowStyle::foreColor']]]
 ];

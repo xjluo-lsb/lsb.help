@@ -99,8 +99,8 @@ Inheritance diagram for ViewLauncher:</div>
  <div class="center">
   <img src="class_view_launcher.png" usemap="#ViewLauncher_map" alt=""/>
   <map id="ViewLauncher_map" name="ViewLauncher_map">
-<area href="class_component_elements.html" title="This is a node group, it defines the child nodes for all components, which is base of all view contro..." alt="ComponentElements" shape="rect" coords="0,0,128,24"/>
-<area href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components,..." alt="ComponentAttributes" shape="rect" coords="138,0,266,24"/>
+<area href="class_component_elements.html" title="This is a node group, it defines the common child nodes for all components. It is the base child node..." alt="ComponentElements" shape="rect" coords="0,0,128,24"/>
+<area href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components...." alt="ComponentAttributes" shape="rect" coords="138,0,266,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -110,7 +110,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a85de028dadcba9bfc9434cbbd9acc71b"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Mandatory] This attribute defines the repository name of the target view to be launched.  <br /></td></tr>
 <tr class="separator:a85de028dadcba9bfc9434cbbd9acc71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf0f9799d358e67aeef3f7b97735aae9" id="r_aaf0f9799d358e67aeef3f7b97735aae9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf0f9799d358e67aeef3f7b97735aae9">view</a></td></tr>
-<tr class="memdesc:aaf0f9799d358e67aeef3f7b97735aae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Mandatory] This attribute defines the name of the target view to be launcher.  <br /></td></tr>
+<tr class="memdesc:aaf0f9799d358e67aeef3f7b97735aae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Mandatory] This attribute defines the name of the target view to be launched.  <br /></td></tr>
 <tr class="separator:aaf0f9799d358e67aeef3f7b97735aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_component_attributes"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_component_attributes')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_component_attributes.html">ComponentAttributes</a></td></tr>
 <tr class="memitem:a67c567751701f4329b92200ac7074a3f inherit pub_attribs_class_component_attributes" id="r_a67c567751701f4329b92200ac7074a3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_u_i_d.html">UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_attributes.html#a67c567751701f4329b92200ac7074a3f">id</a></td></tr>
@@ -119,13 +119,13 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_view_launcher.html" title="The ViewLauncher node is a component to launch another LSB view with parameters.">ViewLauncher</a> node is a component to launch another LSB view with parameters. </p>
-<p>The <a class="el" href="class_view_launcher.html" title="The ViewLauncher node is a component to launch another LSB view with parameters.">ViewLauncher</a> is another invisible component. It collects parameter values from current view, sends them as input parameter for the target view and launch the target view specified through the view configuration. In the configuration, to specify the target view to be launched, view author needs to specify both the repository name and the view name. The reason is that the view name is not unique from LSB perspective - the views in different repositories might have the same name.</p>
+<p>The <a class="el" href="class_view_launcher.html" title="The ViewLauncher node is a component to launch another LSB view with parameters.">ViewLauncher</a> is another invisible component. It collects parameter values from current view, sends them as input parameter for the target view and launches the target view specified through the view configuration. In the configuration, to specify the target view to be launched, view author needs to specify both the repository name and the view name. The reason is that the view name is not unique from LSB perspective - views in different view repositories might have the same name.</p>
 <p>The <a class="el" href="class_view_launcher.html" title="The ViewLauncher node is a component to launch another LSB view with parameters.">ViewLauncher</a> node contains following child nodes,</p><ul>
-<li>All the nodes defined in the <a class="el" href="class_component_elements.html" title="This is a node group, it defines the child nodes for all components, which is base of all view contro...">ComponentElements</a>.</li>
+<li>All the nodes defined in the <a class="el" href="class_component_elements.html" title="This is a node group, it defines the common child nodes for all components. It is the base child node...">ComponentElements</a>.</li>
 <li>[Mandatory] The connection node in type of <a class="el" href="class_data_flow.html" title="This node defines a set of parameter mapping from an output parameter (source) to one or more input p...">DataFlow</a> defines how the parameters in current view will be passed into the target view as input parameters.</li>
 </ul>
 <p>The <a class="el" href="class_view_launcher.html" title="The ViewLauncher node is a component to launch another LSB view with parameters.">ViewLauncher</a> node contains following attributes,</p><ul>
-<li>All the attributes defined in the <a class="el" href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components,...">ComponentAttributes</a>,</li>
+<li>All the attributes defined in the <a class="el" href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components....">ComponentAttributes</a>,</li>
 <li>Plus following attributes, </li>
 </ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
@@ -157,7 +157,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Mandatory] This attribute defines the name of the target view to be launcher. </p>
+<p>[Mandatory] This attribute defines the name of the target view to be launched. </p>
 
 </div>
 </div>

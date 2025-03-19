@@ -101,18 +101,18 @@ Inheritance diagram for TabLayout:</div>
   <map id="TabLayout_map" name="TabLayout_map">
 <area href="class_view_elements.html" title="This group defines the child nodes for all views." alt="ViewElements" shape="rect" coords="0,56,128,80"/>
 <area href="class_view_attributes.html" title="This group defines the attributes for all views." alt="ViewAttributes" shape="rect" coords="138,56,266,80"/>
-<area href="class_component_elements.html" title="This is a node group, it defines the child nodes for all components, which is base of all view contro..." alt="ComponentElements" shape="rect" coords="0,0,128,24"/>
-<area href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components,..." alt="ComponentAttributes" shape="rect" coords="138,0,266,24"/>
+<area href="class_component_elements.html" title="This is a node group, it defines the common child nodes for all components. It is the base child node..." alt="ComponentElements" shape="rect" coords="0,0,128,24"/>
+<area href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components...." alt="ComponentAttributes" shape="rect" coords="138,0,266,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a01f55f847c69a8f93082b6f512f1be82" id="r_a01f55f847c69a8f93082b6f512f1be82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01f55f847c69a8f93082b6f512f1be82">multiLine</a></td></tr>
-<tr class="memdesc:a01f55f847c69a8f93082b6f512f1be82"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean attribute controls if the tab headers in the tab control can be displayed in multiple rows. The default value is false.  <br /></td></tr>
+<tr class="memdesc:a01f55f847c69a8f93082b6f512f1be82"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean attribute controls if the tab headers in the tab control is displayed in multiple rows. The default value is false.  <br /></td></tr>
 <tr class="separator:a01f55f847c69a8f93082b6f512f1be82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f8d60410dab91cc840600d40984c3f" id="r_ab2f8d60410dab91cc840600d40984c3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__section__enum.html#ga308d4cc556b5f464069036637dde61c4">TabPosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2f8d60410dab91cc840600d40984c3f">tabPosition</a></td></tr>
-<tr class="memdesc:ab2f8d60410dab91cc840600d40984c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This attribute defines in which side should be tab headers be displayed. The default value is Top.  <br /></td></tr>
+<tr class="memdesc:ab2f8d60410dab91cc840600d40984c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This attribute defines in which side of the TabControl should the tab headers be displayed. The default value is Top.  <br /></td></tr>
 <tr class="separator:ab2f8d60410dab91cc840600d40984c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_view_attributes"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_view_attributes')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_view_attributes.html">ViewAttributes</a></td></tr>
 <tr class="memitem:abbaf459fa44f0765a2b15f90516f433c inherit pub_attribs_class_view_attributes" id="r_abbaf459fa44f0765a2b15f90516f433c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__section__enum.html#ga3a499a6fe47e9271355afa8b2739fe6b">LoadDataAt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_attributes.html#abbaf459fa44f0765a2b15f90516f433c">loadDataAt</a></td></tr>
@@ -125,10 +125,10 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_tab_layout.html" title="The TabLayout is a layout control that arranges child views in tab pages.">TabLayout</a> is a layout control that arranges child views in tab pages. </p>
-<p>The <a class="el" href="class_tab_layout.html" title="The TabLayout is a layout control that arranges child views in tab pages.">TabLayout</a> layout control uses the TabControl to arrange multiple child views in tab pages, one child view in each tab page. The child views in each tab page could be data view controls, input controls or even layout controls including <a class="el" href="class_tab_layout.html" title="The TabLayout is a layout control that arranges child views in tab pages.">TabLayout</a> itself.</p>
+<p>The <a class="el" href="class_tab_layout.html" title="The TabLayout is a layout control that arranges child views in tab pages.">TabLayout</a> layout control uses the TabControl to arrange multiple child views in tab pages, one child view in each tab page. The child views in each tab page could be data view controls, input controls or layout controls including <a class="el" href="class_tab_layout.html" title="The TabLayout is a layout control that arranges child views in tab pages.">TabLayout</a> itself.</p>
 <p>This <a class="el" href="class_tab_layout.html" title="The TabLayout is a layout control that arranges child views in tab pages.">TabLayout</a> node contains following child nodes,</p><ul>
 <li>All the nodes defined in <a class="el" href="class_view_elements.html" title="This group defines the child nodes for all views.">ViewElements</a>.</li>
-<li>pages - This is the parent node for all page nodes in type of <a class="el" href="class_tab_page.html" title="This node is used for defining the tag page in TabControl.">TabPage</a>. There should be at least one page under the pages node, and there is no upper boundary on the page count.</li>
+<li>pages - This is the parent node for all page nodes in type of <a class="el" href="class_tab_page.html" title="This node is used for defining the tab page in the TabLayout control.">TabPage</a>. There should be at least one page under the pages node, and there is no upper boundary on the page count.</li>
 </ul>
 <p>This <a class="el" href="class_tab_layout.html" title="The TabLayout is a layout control that arranges child views in tab pages.">TabLayout</a> node contains following attributes,</p><ul>
 <li>All the attributes defined in the <a class="el" href="class_view_attributes.html" title="This group defines the attributes for all views.">ViewAttributes</a>.</li>
@@ -147,7 +147,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Optional] This boolean attribute controls if the tab headers in the tab control can be displayed in multiple rows. The default value is false. </p>
+<p>[Optional] This boolean attribute controls if the tab headers in the tab control is displayed in multiple rows. The default value is false. </p>
 
 </div>
 </div>
@@ -163,7 +163,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Optional] This attribute defines in which side should be tab headers be displayed. The default value is Top. </p>
+<p>[Optional] This attribute defines in which side of the TabControl should the tab headers be displayed. The default value is Top. </p>
 
 </div>
 </div>

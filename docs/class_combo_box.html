@@ -91,7 +91,7 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from predefined value li...">ComboBox</a> is an input control that supports user to either select a value from predefined value list or type in any other value.  
+<p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from a predefined value ...">ComboBox</a> is an input control that supports user to either select a value from a predefined value list or type in any other value.  
  <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ComboBox:</div>
@@ -101,15 +101,15 @@ Inheritance diagram for ComboBox:</div>
   <map id="ComboBox_map" name="ComboBox_map">
 <area href="class_view_elements.html" title="This group defines the child nodes for all views." alt="ViewElements" shape="rect" coords="0,56,128,80"/>
 <area href="class_view_attributes.html" title="This group defines the attributes for all views." alt="ViewAttributes" shape="rect" coords="138,56,266,80"/>
-<area href="class_component_elements.html" title="This is a node group, it defines the child nodes for all components, which is base of all view contro..." alt="ComponentElements" shape="rect" coords="0,0,128,24"/>
-<area href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components,..." alt="ComponentAttributes" shape="rect" coords="138,0,266,24"/>
+<area href="class_component_elements.html" title="This is a node group, it defines the common child nodes for all components. It is the base child node..." alt="ComponentElements" shape="rect" coords="0,0,128,24"/>
+<area href="class_component_attributes.html" title="This is an attribute group, it defines the attributes that are used in all components...." alt="ComponentAttributes" shape="rect" coords="138,0,266,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1f796ac7a6dbbda3c74ef8dda9ce5bcb" id="r_a1f796ac7a6dbbda3c74ef8dda9ce5bcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f796ac7a6dbbda3c74ef8dda9ce5bcb">selectOnly</a></td></tr>
-<tr class="memdesc:a1f796ac7a6dbbda3c74ef8dda9ce5bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean flag controls if the <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from predefined value li...">ComboBox</a> supports selecting value from list only (true) or also allows end user to type in value (false). The default value is false.  <br /></td></tr>
+<tr class="memdesc:a1f796ac7a6dbbda3c74ef8dda9ce5bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean flag controls if the <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from a predefined value ...">ComboBox</a> supports selecting value from list only (true) or also allows end user to type in value (false). The default value is false.  <br /></td></tr>
 <tr class="separator:a1f796ac7a6dbbda3c74ef8dda9ce5bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5894938bf39a3570f6a965fa977aa82" id="r_ae5894938bf39a3570f6a965fa977aa82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5894938bf39a3570f6a965fa977aa82">sorted</a></td></tr>
 <tr class="memdesc:ae5894938bf39a3570f6a965fa977aa82"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean flag controls if the values in the value list are sorted or not. The default value is false.  <br /></td></tr>
@@ -130,14 +130,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a67c567751701f4329b92200ac7074a3f inherit pub_attribs_class_component_attributes"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from predefined value li...">ComboBox</a> is an input control that supports user to either select a value from predefined value list or type in any other value. </p>
-<p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from predefined value li...">ComboBox</a> control is a combination of a list box and an edit control. The end user may select a value from the predefined value list or type in a value through the edit control. And the control will send the value out through output parameter to trigger any further action(s).</p>
-<p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from predefined value li...">ComboBox</a> node contains following child nodes,</p><ul>
+<div class="textblock"><p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from a predefined value ...">ComboBox</a> is an input control that supports user to either select a value from a predefined value list or type in any other value. </p>
+<p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from a predefined value ...">ComboBox</a> control is a combination of a list box and an edit control. The end user may select a value from the predefined value list or type in a value through the edit control. And the control will send the value out through output parameter to trigger further action(s).</p>
+<p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from a predefined value ...">ComboBox</a> node contains following child nodes,</p><ul>
 <li>All the nodes defined in <a class="el" href="class_view_elements.html" title="This group defines the child nodes for all views.">ViewElements</a>.</li>
-<li>[Optional] The prompt node in type of <a class="el" href="class_prompt.html" title="This node defines the prompt text for the ComboBox and TextInput.">Prompt</a> defines the prompt for the <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from predefined value li...">ComboBox</a> input.</li>
-<li>[Optional] The options node in type of <a class="el" href="class_option_list.html" title="This node defines a set of options to be used in ComboBox or PropertyInput control.">OptionList</a> defines the preset values that the end user can select one from them.</li>
+<li>[Optional] The prompt node in type of <a class="el" href="class_prompt.html" title="This node defines the prompt text for the ComboBox and TextInput.">Prompt</a> defines the prompt for the <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from a predefined value ...">ComboBox</a> input.</li>
+<li>[Optional] The options node in type of <a class="el" href="class_option_list.html" title="This node defines a set of options to be used in the ComboBox or PropertyInput control.">OptionList</a> defines the preset values that the end user can select one value from them.</li>
 </ul>
-<p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from predefined value li...">ComboBox</a> node contains following attributes,</p><ul>
+<p>The <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from a predefined value ...">ComboBox</a> node contains following attributes,</p><ul>
 <li>All the attributes defined in <a class="el" href="class_view_attributes.html" title="This group defines the attributes for all views.">ViewAttributes</a>.</li>
 <li>Plus following attributes, </li>
 </ul>
@@ -170,7 +170,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[Optional] This boolean flag controls if the <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from predefined value li...">ComboBox</a> supports selecting value from list only (true) or also allows end user to type in value (false). The default value is false. </p>
+<p>[Optional] This boolean flag controls if the <a class="el" href="class_combo_box.html" title="The ComboBox is an input control that supports user to either select a value from a predefined value ...">ComboBox</a> supports selecting value from list only (true) or also allows end user to type in value (false). The default value is false. </p>
 
 </div>
 </div>

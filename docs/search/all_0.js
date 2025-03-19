@@ -14,5 +14,5 @@ var searchData=
   ['1_20menu_11',['1.1 Menu',['../group__section__ui.html#autotoc_md2',1,'']]],
   ['1_20open_20a_20view_20dialog_12',['3.1 Open a view dialog',['../group__section__ui.html#autotoc_md15',1,'']]],
   ['1_20the_20strong_20file_20strong_20menu_13',['1.1.1 The &lt;strong&gt;File&lt;/strong&gt; menu',['../group__section__ui.html#autotoc_md3',1,'']]],
-  ['1_20view_14',['2.1 View',['../group__section__ui.html#autotoc_md9',1,'']]]
+  ['1_20view_20page_14',['2.1 View page',['../group__section__ui.html#autotoc_md9',1,'']]]
 ];
