@@ -23,7 +23,7 @@ var searchData=
   ['lsb_20settings_20',['The LSB Settings',['../group__section__settings.html',1,'']]],
   ['lsb_20ui_21',['The LSB UI',['../group__section__ui.html',1,'']]],
   ['lsb_20view_22',['LSB View',['../group__section__create__view.html',1,'How to Create a LSB View'],['../group__section__debug__view.html',1,'How to Test / Debug an LSB View']]],
-  ['lsb_20view_23',['LSB view',['../group__section__debug__view.html#autotoc_md45',1,'Testing an LSB view'],['../group__section__create__view.html#autotoc_md43',1,'Write an LSB view']]],
+  ['lsb_20view_23',['LSB view',['../group__section__debug__view.html#autotoc_md47',1,'Testing an LSB view'],['../group__section__create__view.html#autotoc_md43',1,'Write an LSB view']]],
   ['lsb_20view_20file_24',['LSB view file',['../group__section__create__view.html#autotoc_md42',1,'']]],
   ['lsb_20view_20repositories_25',['The LSB View Repositories',['../group__section__views.html',1,'']]],
   ['lsb_20view_20window_26',['2. LSB View window',['../group__section__ui.html#autotoc_md8',1,'']]],

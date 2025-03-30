@@ -11,7 +11,7 @@ var searchData=
   ['align_8',['align',['../class_column.html#adce727161226c908fcbdf42cbac3cbe8',1,'Column']]],
   ['all_20controls_20demo_20lsbv_9',['all-controls-demo.lsbv',['../group__section__views.html#autotoc_md28',1,'']]],
   ['an_20lsb_20view_10',['How to Test / Debug an LSB View',['../group__section__debug__view.html',1,'']]],
-  ['an_20lsb_20view_11',['an LSB view',['../group__section__debug__view.html#autotoc_md45',1,'Testing an LSB view'],['../group__section__create__view.html#autotoc_md43',1,'Write an LSB view']]],
+  ['an_20lsb_20view_11',['an LSB view',['../group__section__debug__view.html#autotoc_md47',1,'Testing an LSB view'],['../group__section__create__view.html#autotoc_md43',1,'Write an LSB view']]],
   ['and_20charts_12',['Graphs and Charts',['../group__section__views.html#autotoc_md30',1,'']]],
   ['applicationdata_13',['ApplicationData',['../group__section__enum.html#ggaa461cf03f77304025165d20dfa8b54eca321f08d4df04ad288e6e8f4bc371e664',1,'LsbViewSchema.dox']]],
   ['applicationdocuments_14',['ApplicationDocuments',['../group__section__enum.html#ggaa461cf03f77304025165d20dfa8b54eca3e63771e1cc9bc7fd0a2a751a069cce0',1,'LsbViewSchema.dox']]],

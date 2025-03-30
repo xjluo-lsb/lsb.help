@@ -87,7 +87,7 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">How to Test / Debug an LSB View</div></div>
 </div><!--header-->
 <div class="contents">
-<h2><a class="anchor" id="autotoc_md45"></a>
+<h2><a class="anchor" id="autotoc_md47"></a>
 Testing an LSB view</h2>
 <p>An LSB view should be tested before it's released to other users. The LSB application provides multiple features that can help the view creators to test and debug the LSB views, such as local view repository, message logging, etc. Here are the steps on how a view creator can test an LSB view locally through the LSB application.</p>
 <ol>
@@ -120,7 +120,7 @@ Is the parameter mapping set correctly? If the output parameter has sent out the
 <li>
 If it's confirmed that the input parameter received the value change, but the UI still doesn't respond correctly. The next thing to check is the parameter condition for the view control. The condition test result should be logged in the message list. If input parameter changes are detected but the values do not match the condition, the content would not be refreshed. </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md46"></a>
+<h2><a class="anchor" id="autotoc_md48"></a>
 Module References</h2>
 <p>Even though the LSB view provides the <b>Lua</b> page and other shell pages to show the embedded Lua scripts and shell scripts executed in the LSB view, are difficult to debug directly inside the LSB view. The recommended way for writing embbeded scripts is to write large pieces of scripts in separated script files and add them through the module references. By putting the scripts into dedicated files, it's relative easier to use the tools come with the script language to test and debug. After the script files are tested, the scripts embedded in the LSB view only makes simple calls to the functions defined in the script files. </p>
 </div><!-- contents -->

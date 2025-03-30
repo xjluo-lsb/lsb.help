@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['questions_0',['Frequently Asked Questions',['../group__section__faq.html',1,'']]]
+  ['naming_0',['Parameter Naming',['../group__section__param__naming.html',1,'']]]
 ];

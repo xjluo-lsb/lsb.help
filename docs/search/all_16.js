@@ -2,7 +2,7 @@ var searchData=
 [
   ['ratio_0',['ratio',['../class_split_layout.html#a3fc4bb28bf883a4798cf676ee407034e',1,'SplitLayout']]],
   ['readonly_1',['readOnly',['../class_text_view.html#afef491931ad817bc7a1ce0933c7f10cb',1,'TextView']]],
-  ['references_2',['Module References',['../group__section__debug__view.html#autotoc_md46',1,'']]],
+  ['references_2',['Module References',['../group__section__debug__view.html#autotoc_md48',1,'']]],
   ['refresh_3',['refresh',['../class_context_menu.html#a455377da27bb6d68af557f22887c23c9',1,'ContextMenu']]],
   ['repositories_4',['Repositories',['../group__section__views.html',1,'The LSB View Repositories'],['../group__section__views.html#autotoc_md26',1,'User Configured View Repositories']]],
   ['repository_5',['Default View Repository',['../group__section__views.html#autotoc_md25',1,'']]],
