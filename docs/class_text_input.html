@@ -117,9 +117,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2e1093d75da4db7791cd725aab347c24" id="r_a2e1093d75da4db7791cd725aab347c24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e1093d75da4db7791cd725aab347c24">multiline</a></td></tr>
 <tr class="memdesc:a2e1093d75da4db7791cd725aab347c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This boolean attribute controls if the <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a> supports single line edit control or multiple line edit control. The default value is false, which means it implements as single line edit control.  <br /></td></tr>
 <tr class="separator:a2e1093d75da4db7791cd725aab347c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7478b92c6b0f790322435be3b24d2a28" id="r_a7478b92c6b0f790322435be3b24d2a28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__section__enum.html#ga80c7c29de5f29b356dcee57eadaddc4d">WhenToNotify</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7478b92c6b0f790322435be3b24d2a28">whenToNotify</a></td></tr>
-<tr class="memdesc:a7478b92c6b0f790322435be3b24d2a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This attribute in type of WhenToNotify defines when to trigger the output parameter to send out the new value to other controls when the end user types in to the control. The default value is Enter, which means when the Enter key is pressed in the <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a>, the new value is sent out.  <br /></td></tr>
-<tr class="separator:a7478b92c6b0f790322435be3b24d2a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_view_attributes"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_view_attributes')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_view_attributes.html">ViewAttributes</a></td></tr>
 <tr class="memitem:abbaf459fa44f0765a2b15f90516f433c inherit pub_attribs_class_view_attributes" id="r_abbaf459fa44f0765a2b15f90516f433c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__section__enum.html#ga3a499a6fe47e9271355afa8b2739fe6b">LoadDataAt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_attributes.html#abbaf459fa44f0765a2b15f90516f433c">loadDataAt</a></td></tr>
 <tr class="memdesc:abbaf459fa44f0765a2b15f90516f433c inherit pub_attribs_class_view_attributes"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] This attribute defines when the view should load the data. The default value is Default.  <br /></td></tr>
@@ -132,6 +129,11 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a> is an input control that allows user to type in any character as the input value. </p>
 <p>The <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a> supports both single line and multiple line text edit control that allows end user to type in text as value and send to other view controls through output parameter associated with it. It's typically used as input control for one single value. To create input for multiple values or a complicated data structure, please refer to the <a class="el" href="class_property_input.html" title="The PropertyInput is an input control that supports editing multiple variables or complicated structu...">PropertyInput</a> control. The value inputted through <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a> is a string. View author can convert the the string value into any other data types as they need in the script(s).</p>
+<p>When the value is changed or enter key is pressed in the <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a>, there are 3 specific parameter names can be used to send out the current value in the <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a>,</p><ul>
+<li><b>$</b> if enter key is pressed in the <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a>, the output parameter with this name will be updated.</li>
+<li><b>?</b> if text value in the <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a> is changed, the output parameter with this name will be updated.</li>
+<li><b>*</b> whenever there is text value change, or enter key is pressed, this parameter will be updated.</li>
+</ul>
 <p>The <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a> node contains following child nodes,</p><ul>
 <li>All the nodes defined in <a class="el" href="class_view_elements.html" title="This group defines the child nodes for all views.">ViewElements</a>.</li>
 <li>[Optional] The prompt node in type of <a class="el" href="class_prompt.html" title="This node defines the prompt text for the ComboBox and TextInput.">Prompt</a> defines the prompt for the <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a> control.</li>
@@ -187,22 +189,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>[Optional] This attribute controls if the user selected/typed in value should have space(s) trimmed before it's sent to other view controls. The default value is None. </p>
-
-</div>
-</div>
-<a id="a7478b92c6b0f790322435be3b24d2a28" name="a7478b92c6b0f790322435be3b24d2a28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7478b92c6b0f790322435be3b24d2a28">&#9670;&#160;</a></span>whenToNotify</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__section__enum.html#ga80c7c29de5f29b356dcee57eadaddc4d">WhenToNotify</a> TextInput::whenToNotify</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>[Optional] This attribute in type of WhenToNotify defines when to trigger the output parameter to send out the new value to other controls when the end user types in to the control. The default value is Enter, which means when the Enter key is pressed in the <a class="el" href="class_text_input.html" title="The TextInput is an input control that allows user to type in any character as the input value.">TextInput</a>, the new value is sent out. </p>
 
 </div>
 </div>
