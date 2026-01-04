@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['script_20behind_20explained_0',['Leave Script Behind Explained',['../index.html',1,'']]]
+  ['4_20about_20page_0',['2.4 About page',['../group__section__ui.html#autotoc_md12',1,'']]],
+  ['4_20settings_1',['3.4 Settings',['../group__section__ui.html#autotoc_md18',1,'']]],
+  ['4_20the_20help_20menu_2',['1.1.4 The &lt;b&gt;Help&lt;/b&gt; menu',['../group__section__ui.html#autotoc_md6',1,'']]]
 ];

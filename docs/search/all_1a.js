@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['value_0',['Filter Value',['../group__section__smart__filter.html#autotoc_md39',1,'']]],
+  ['value_0',['Filter Value',['../group__section__smart__filter.html#autotoc_md42',1,'']]],
   ['value_1',['value',['../class_option_path.html#a47e63dc7b78022e8d503b675c6d4f7b3',1,'OptionPath']]],
   ['valuepattern_2',['valuePattern',['../class_input_param.html#a08dacbbbcd6ae5c41360b99b5dc762b9',1,'InputParam']]],
   ['version_3',['Version',['../class_version.html',1,'']]],
   ['vertical_4',['Vertical',['../group__section__enum.html#gga871118a09520247c78a71ecd7b0abd58a06ce2a25e5d12c166a36f654dbea6012',1,'LsbViewSchema.dox']]],
   ['view_5',['View',['../group__section__create__view.html',1,'How to Create a LSB View'],['../group__section__debug__view.html',1,'How to Test / Debug an LSB View'],['../group__section__enum.html#gga2c601815744f46d2a31b1f973d14d5c9a4351cfebe4b61d8aa5efa1d020710005',1,'View:&#160;LsbViewSchema.dox']]],
-  ['view_6',['view',['../group__section__ui.html#autotoc_md17',1,'3.3 Select view'],['../group__section__debug__view.html#autotoc_md47',1,'Testing an LSB view'],['../class_view_launcher.html#aaf0f9799d358e67aeef3f7b97735aae9',1,'ViewLauncher::view'],['../group__section__create__view.html#autotoc_md43',1,'Write an LSB view']]],
+  ['view_6',['view',['../group__section__ui.html#autotoc_md17',1,'3.3 Select view'],['../group__section__debug__view.html#autotoc_md50',1,'Testing an LSB view'],['../class_view_launcher.html#aaf0f9799d358e67aeef3f7b97735aae9',1,'ViewLauncher::view'],['../group__section__create__view.html#autotoc_md46',1,'Write an LSB view']]],
   ['view_20controls_7',['View Controls',['../group__section__view.html',1,'']]],
   ['view_20dialog_8',['3.1 Open a view dialog',['../group__section__ui.html#autotoc_md15',1,'']]],
-  ['view_20file_9',['LSB view file',['../group__section__create__view.html#autotoc_md42',1,'']]],
+  ['view_20file_9',['LSB view file',['../group__section__create__view.html#autotoc_md45',1,'']]],
   ['view_20history_10',['3.2 Manage opened view history',['../group__section__ui.html#autotoc_md16',1,'']]],
   ['view_20page_11',['2.1 View page',['../group__section__ui.html#autotoc_md9',1,'']]],
   ['view_20repositories_12',['View Repositories',['../group__section__views.html',1,'The LSB View Repositories'],['../group__section__views.html#autotoc_md26',1,'User Configured View Repositories']]],
@@ -20,7 +20,7 @@ var searchData=
   ['viewcaption_17',['ViewCaption',['../class_view_caption.html',1,'']]],
   ['viewelements_18',['ViewElements',['../class_view_elements.html',1,'']]],
   ['viewlauncher_19',['ViewLauncher',['../class_view_launcher.html',1,'']]],
-  ['views_20',['Sample Views',['../group__section__views.html#autotoc_md27',1,'']]],
+  ['views_20',['Sample Views',['../group__section__views.html#autotoc_md30',1,'']]],
   ['views_20category_21',['Views category',['../group__section__settings.html#autotoc_md23',1,'']]],
   ['visible_22',['visible',['../class_column.html#af46eb112dd47f8e0b994be3499da69ad',1,'Column::visible'],['../class_list_view_filter.html#a13e2fc63c5135bc3fb14f5d901b1527e',1,'ListViewFilter::visible'],['../class_list_view_status.html#ab26df3cb818f0a0e3ab65467fc2af5c8',1,'ListViewStatus::visible'],['../class_prompt.html#a3d991c9f945f50a513b5fd8afe16b53b',1,'Prompt::visible'],['../class_view_caption.html#a3c42842694eaef212711fee1feea1a04',1,'ViewCaption::visible']]],
   ['visualizing_23',['Visualizing',['../group__section__enum.html#gga3a499a6fe47e9271355afa8b2739fe6baacccc8a6362860222376512cd6a4db34',1,'LsbViewSchema.dox']]]

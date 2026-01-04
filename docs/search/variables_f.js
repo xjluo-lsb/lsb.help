@@ -15,7 +15,7 @@ var searchData=
   ['sortable_12',['sortable',['../class_list_view.html#a75ce3bb8f424520b8297d0b1ae04c30f',1,'ListView']]],
   ['sorted_13',['sorted',['../class_combo_box.html#ae5894938bf39a3570f6a965fa977aa82',1,'ComboBox']]],
   ['source_14',['source',['../class_mapping.html#ac559441bcbef9342391158ba78796c94',1,'Mapping']]],
-  ['status_15',['status',['../class_file_list.html#a25accd106bf0625841bccb8e8d2a4d4e',1,'FileList']]],
+  ['status_15',['status',['../class_file_list_view.html#a3f7a51ee2daf5a29e2720266398cd4cb',1,'FileListView']]],
   ['strikethrough_16',['strikethrough',['../class_font_desc.html#aa947c869ebb047576aaf1ac8cbf5fac7',1,'FontDesc']]],
   ['style_17',['style',['../class_font_desc.html#a7686ba8bc23b3af91684f794cf862edf',1,'FontDesc']]]
 ];
